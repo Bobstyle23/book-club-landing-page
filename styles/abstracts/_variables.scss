@@ -1,7 +1,36 @@
-$colors-neutral: (900: #062630, 700: #385159, 200: #e6e1df, 100: #faf5f3, 0: #fff);
-$colors-light-salmon: (500: #fea36f, 100: #ffe2d1, 50: #fff5ef);
-$color-gradient: (text-gradient: linear-gradient(107deg, #FF9A60 -11.37%, #062630 61.84%), gradient: linear-gradient(90deg, #FFE2D1 0%, #FFF5EF 100%));
+$color-neutral-900: #062630;
+$color-neutral-700: #385159;
+$color-neutral-200: #e6e1df;
+$color-neutral-100: #faf5f3;
+$color-neutral-0: #fff;
 
-$spacings: (25: 0.2rem, 50: 0.4rem, 75: 0.6rem, 100: 0.8rem, 150: 1.2rem, 200: 1.6rem, 250: 2rem, 300: 2.4rem, 400: 3.2rem, 500: 4rem, 600: 4.8rem, 800: 6.4rem, 1000: 8rem);
+$color-light-salmon-500: #fea36f;
+$color-light-salmon-100: #ffe2d1;
+$color-light-salmon-50: #fff5ef;
 
-$border-radius: (4: 0.4rem, 6: 0.6rem, 8: 0.8rem, 10: 1rem, 12: 1.2rem, 16: 1.6rem, 20: 2rem, 24: 2.4rem, full: 999px);
+$color-gradient-text-gradient: linear-gradient(107deg, #FF9A60 -11.37%, #062630 61.84%);
+$color-gradient: linear-gradient(90deg, $color-light-salmon-100 0%, $color-light-salmon-50 100%);
+
+$spacing-25: 0.2rem;
+$spacing-50: 0.4rem;
+$spacing-75: 0.6rem;
+$spacing-100: 0.8rem;
+$spacing-150: 1.2rem;
+$spacing-200: 1.6rem;
+$spacing-250: 2rem;
+$spacing-300: 2.4rem;
+$spacing-400: 3.2rem;
+$spacing-500: 4rem;
+$spacing-600: 4.8rem;
+$spacing-800: 6.4rem;
+$spacing-1000: 8rem;
+
+$border-radius-4: 0.4rem;
+$border-radius-6: 0.6rem;
+$border-radius-8: 0.8rem;
+$border-radius-10: 1rem;
+$border-radius-12: 1.2rem;
+$border-radius-16: 1.6rem;
+$border-radius-20: 2rem;
+$border-radius-24: 2.4rem;
+$border-radius-full: 999px;

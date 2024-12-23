@@ -18,6 +18,11 @@
   color: #062630;
 }
 
+.primary:hover {
+  background: linear-gradient(90deg, #ffe2d1 0%, #fff5ef 100%);
+  cursor: pointer;
+}
+
 .primary:focus, .primary:focus-visible, .primary:focus-within {
   box-shadow: inset 0 0 0 2px #062630, 0 0 0 3px #fff, 0 0 0 5px #385159;
   outline: none;
@@ -32,6 +37,11 @@
 .alternate:focus, .alternate:focus-visible, .alternate:focus-within {
   box-shadow: inset 0 0 0 2px #fff, 0 0 0 3px #062630, 0 0 0 5px #e6e1df;
   outline: none;
+}
+
+.alternate:hover {
+  background: linear-gradient(90deg, #385159 0%, #062630 100%);
+  cursor: pointer;
 }
 
 *, *::after, *::before {
@@ -49,7 +59,6 @@ body {
   font-family: "Martian Mono", sans-serif;
   font-weight: 500;
   line-height: 1;
-  background-color: #385159;
   color: #062630;
 }
 

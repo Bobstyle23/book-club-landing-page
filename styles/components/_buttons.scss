@@ -1,6 +1,10 @@
 .primary {
     @extend %primary-button-style;
 
+    &:hover {
+        @extend %primary-button-style-hover;
+    }
+
     &:focus, &:focus-visible, &:focus-within {
         @extend %primary-button-style-focus;
     }
@@ -15,5 +19,9 @@
 
     &:focus, &:focus-visible, &:focus-within {
         @extend %alternate-button-style-focus;
+    }
+
+    &:hover {
+        @extend %alternate-button-style-hover;
     }
 }
