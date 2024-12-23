@@ -1,0 +1,19 @@
+.primary {
+    @extend %primary-button-style;
+
+    &:focus, &:focus-visible, &:focus-within {
+        @extend %primary-button-style-focus;
+    }
+
+    margin: 2rem;
+}
+
+.alternate {
+    @extend %alternate-button-style;
+
+    margin: 2rem;
+
+    &:focus, &:focus-visible, &:focus-within {
+        @extend %alternate-button-style-focus;
+    }
+}

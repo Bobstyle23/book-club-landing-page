@@ -1,0 +1,43 @@
+%flexbox-style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: map-get($map: $spacings, $key: 200);
+}
+
+%button-style {
+    border: none;
+    border-radius: map-get($map: $border-radius, $key: 8);
+    padding: map-get($map: $spacings, $key: 250) map-get($map: $spacings, $key: 300);
+    text-transform: uppercase;
+
+    @extend %text-preset-6;
+
+    @extend %flexbox-style;
+}
+
+%primary-button-style {
+    box-shadow: inset 0 0 0 2px map-get($map: $colors-neutral, $key: 900);
+    background-color: map-get($map: $colors-light-salmon, $key: 50);
+    color: map-get($map: $colors-neutral, $key: 900);
+
+    @extend %button-style;
+}
+
+%primary-button-style-focus {
+    box-shadow: inset 0 0 0 2px map-get($map: $colors-neutral, $key: 900), 0 0 0 3px map-get($map: $colors-neutral, $key: 0), 0 0 0 5px map-get($map: $colors-neutral, $key: 700);
+    outline: none;
+}
+
+%alternate-button-style {
+    background-color: map-get($map: $colors-neutral, $key: 900);
+    color: map-get($map: $colors-neutral, $key: 0);
+    box-shadow: inset 0 0 0 2px map-get($map: $colors-neutral, $key: 0);
+
+    @extend %button-style;
+}
+
+%alternate-button-style-focus {
+    box-shadow: inset 0 0 0 2px map-get($map: $colors-neutral, $key: 0), 0 0 0 3px map-get($map: $colors-neutral, $key: 900), 0 0 0 5px map-get($map: $colors-neutral, $key: 200);
+    outline: none;
+}

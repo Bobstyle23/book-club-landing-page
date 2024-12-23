@@ -13,6 +13,6 @@ body {
     font-family: "Martian Mono", sans-serif;
     font-weight: 500;
     line-height: 1;
-    background-color: map-get($map: $colors-neutral, $key: 0);
+    background-color: map-get($map: $colors-neutral, $key: 700);
     color: map-get($map: $colors-neutral, $key: 900);
 }
