@@ -1,0 +1,106 @@
+.hero {
+    background-image: url("/starter-code/assets/images/pattern-light-bg.svg");
+    background-color: $color-neutral-100;
+    width: 100%;
+    height: auto;
+    padding: $spacing-400 13.5rem $spacing-1000;
+    position: relative;
+    overflow: hidden;
+
+    @extend %flexbox-style;
+
+    flex-direction: column;
+    align-items: flex-start;
+    gap: $spacing-1000;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: -30%;
+        background-color: #9cc9da;
+        opacity: 40%;
+        filter: blur(20rem);
+        width: 684px;
+        height: 684px;
+        border-radius: 50%;
+        pointer-events: none;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: $spacing-800;
+        align-items: center;
+
+        &-title {
+            @extend %text-preset-1;
+
+            background: $color-gradient-text-gradient;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: $spacing-300;
+        }
+
+        &-description {
+            @extend %text-preset-5;
+
+            color: $color-neutral-700;
+            margin-bottom: $spacing-400;
+        }
+
+        &-btn {
+            margin-bottom: $spacing-250;
+
+            @extend %primary-button-style;
+
+            &:hover {
+                @extend %primary-button-style-hover;
+            }
+
+            &:focus, &:focus-visible, &:focus-within {
+                @extend %primary-button-style-focus;
+            }
+        }
+
+        &-reviews {
+            @extend %flexbox-style;
+
+            justify-content: start;
+            align-items: center;
+            gap: $spacing-150;
+        }
+
+        &-avatars {
+            max-width: 11rem;
+        }
+
+        &-rating {
+            img {
+                width: 2.4rem;
+                height: 2.4rem;
+                margin-bottom: $spacing-50;
+            }
+
+            p {
+                @extend %text-preset-7;
+
+                color: $color-neutral-700;
+            }
+        }
+
+        &-image {
+            width: 54rem;
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: $border-radius-10;
+            }
+        }
+    }
+}
+
+/* HACK: small mobiles (320px ~ 480px) */
+/* HACK: large mobiles (481px ~ 767px) */
+/* HACK: tablets (768px ~ 1024px) */
