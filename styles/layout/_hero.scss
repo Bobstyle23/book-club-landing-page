@@ -38,6 +38,7 @@
 
             background: $color-gradient-text-gradient;
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
             margin-bottom: $spacing-300;
         }
@@ -51,16 +52,6 @@
 
         &-btn {
             margin-bottom: $spacing-250;
-
-            @extend %primary-button-style;
-
-            &:hover {
-                @extend %primary-button-style-hover;
-            }
-
-            &:focus, &:focus-visible, &:focus-within {
-                @extend %primary-button-style-focus;
-            }
         }
 
         &-reviews {
