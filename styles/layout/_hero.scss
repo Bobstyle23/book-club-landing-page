@@ -14,17 +14,7 @@
     gap: $spacing-1000;
 
     &::after {
-        content: "";
-        position: absolute;
-        top: 50%;
-        right: -30%;
-        background-color: #9cc9da;
-        opacity: 40%;
-        filter: blur(20rem);
-        width: 684px;
-        height: 684px;
-        border-radius: 50%;
-        pointer-events: none;
+        @include blur-effect(50%, -30%);
     }
 
     &__content {

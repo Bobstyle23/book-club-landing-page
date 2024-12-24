@@ -1,0 +1,13 @@
+@mixin blur-effect($top, $right) {
+    content: "";
+    position: absolute;
+    top: $top;
+    right: $right;
+    background-color: #9cc9da;
+    opacity: 0.8;
+    filter: blur(20rem);
+    width: 68.4rem;
+    height: 68.4rem;
+    border-radius: 50%;
+    pointer-events: none;
+}

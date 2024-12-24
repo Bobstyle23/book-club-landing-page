@@ -115,9 +115,10 @@ body {
   top: 50%;
   right: -30%;
   background-color: #9cc9da;
+  opacity: 0.8;
   filter: blur(20rem);
-  width: 684px;
-  height: 684px;
+  width: 68.4rem;
+  height: 68.4rem;
   border-radius: 50%;
   pointer-events: none;
 }
