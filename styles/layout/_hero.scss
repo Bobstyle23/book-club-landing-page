@@ -6,6 +6,7 @@
     padding: $spacing-32 13.5rem $spacing-80;
     position: relative;
     overflow: hidden;
+    z-index: 10;
 
     @extend %flexbox-style;
 
@@ -81,3 +82,31 @@
 /* HACK: small mobiles (320px ~ 480px) */
 /* HACK: large mobiles (481px ~ 767px) */
 /* HACK: tablets (768px ~ 1024px) */
+
+/* HACK: tablets (768px ~ 1024px) */
+@media (min-width: 48em) and (max-width: 64em) {
+    .hero {
+        padding: $spacing-32 $spacing-32 $spacing-80;
+        gap: $spacing-64;
+        position: relative;
+        overflow: hidden;
+        z-index: 10;
+
+        &::after {
+            @include blur-effect(73%, -50%);
+        }
+
+        &__content {
+            grid-template-columns: 1fr;
+            row-gap: $spacing-64;
+
+            &-title {
+                letter-spacing: -1px;
+            }
+
+            &-description {
+                letter-spacing: -0.2px;
+            }
+        }
+    }
+}
