@@ -178,8 +178,8 @@ body {
 /* HACK: small mobiles (320px ~ 480px) */
 /* HACK: large mobiles (481px ~ 767px) */
 /* HACK: tablets (768px ~ 1024px) */
-/* HACK: tablets (768px ~ 1024px) */
-@media (min-width: 48em) and (max-width: 64em) {
+/* HACK: tablets (768px ~ 1024px ~ 1264px) */
+@media (min-width: 48em) and (max-width: 79em) {
   .hero {
     padding: 3.2rem 3.2rem 8rem;
     gap: 6.4rem;

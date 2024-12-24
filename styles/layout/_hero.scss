@@ -83,8 +83,8 @@
 /* HACK: large mobiles (481px ~ 767px) */
 /* HACK: tablets (768px ~ 1024px) */
 
-/* HACK: tablets (768px ~ 1024px) */
-@media (min-width: 48em) and (max-width: 64em) {
+/* HACK: tablets (768px ~ 1024px ~ 1264px) */
+@media (min-width: 48em) and (max-width: 79em) {
     .hero {
         padding: $spacing-32 $spacing-32 $spacing-80;
         gap: $spacing-64;
