@@ -179,13 +179,12 @@ body {
 /* HACK: large mobiles (481px ~ 767px) */
 /* HACK: tablets (768px ~ 1024px) */
 /* HACK: tablets (768px ~ 1024px ~ 1264px) */
-@media (min-width: 48em) and (max-width: 79em) {
+@media (min-width: 48em) and (max-width: 64em) {
   .hero {
     padding: 3.2rem 3.2rem 8rem;
     gap: 6.4rem;
     position: relative;
     overflow: hidden;
-    z-index: 10;
   }
   .hero::after {
     content: "";
@@ -204,6 +203,39 @@ body {
   .hero__content {
     grid-template-columns: 1fr;
     row-gap: 6.4rem;
+  }
+  .hero__content-title {
+    letter-spacing: -1px;
+  }
+  .hero__content-description {
+    letter-spacing: -0.2px;
+  }
+}
+
+/* HACK: large tablets (1025px ~ 1265px) */
+@media (min-width: 64.063em) and (max-width: 79.063em) {
+  html {
+    font-size: 56.25%;
+  }
+  .hero {
+    padding: 6.4rem 4.8rem;
+    gap: 6.4rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -30%;
+    background-color: #9cc9da;
+    opacity: 0.8;
+    filter: blur(20rem);
+    width: 68.4rem;
+    height: 68.4rem;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: -1;
   }
   .hero__content-title {
     letter-spacing: -1px;
