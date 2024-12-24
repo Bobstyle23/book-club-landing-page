@@ -213,6 +213,32 @@ body {
   }
 }
 
+/* HACK: large mobiles (481px ~ 767px) */
+@media (min-width: 30.063em) and (max-width: 47.94em) {
+  .hero {
+    padding: 3.2rem 3.2rem 4.8rem;
+    gap: 4.8rem;
+  }
+  .hero::after {
+    content: "";
+    position: absolute;
+    top: 76%;
+    right: -50%;
+    background-color: #9cc9da;
+    opacity: 0.8;
+    filter: blur(20rem);
+    width: 68.4rem;
+    height: 68.4rem;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: -1;
+  }
+  .hero__content {
+    grid-template-columns: 1fr;
+    row-gap: 6.4rem;
+  }
+}
+
 @media (min-width: 48em) and (max-width: 79.063em) {
   .hero {
     gap: 6.4rem;

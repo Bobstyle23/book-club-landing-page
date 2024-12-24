@@ -84,7 +84,6 @@
 /* HACK: tablets (768px ~ 1024px) */
 
 /* HACK: small mobiles (320px ~ 480px) */
-
 @media (min-width: 20em) and (max-width: 30em) {
     .hero {
         padding: $spacing-24 $spacing-16 $spacing-80;
@@ -109,6 +108,23 @@
             &-btn {
                 font-size: calc(1.2rem + .2vw);
             }
+        }
+    }
+}
+
+/* HACK: large mobiles (481px ~ 767px) */
+@media (min-width: 30.063em) and (max-width: 47.94em) {
+    .hero {
+        padding: $spacing-32 $spacing-32 $spacing-48;
+        gap: $spacing-48;
+
+        &::after {
+            @include blur-effect(76%, -50%);
+        }
+
+        &__content {
+            grid-template-columns: 1fr;
+            row-gap: $spacing-64;
         }
     }
 }
