@@ -83,11 +83,27 @@
 /* HACK: large mobiles (481px ~ 767px) */
 /* HACK: tablets (768px ~ 1024px) */
 
-/* HACK: tablets (768px ~ 1024px ~ 1264px) */
+// Repetitive styles for tablets
+@media (max-width: 79.063em) {
+    .hero {
+        gap: $spacing-64;
+
+        &__content {
+            &-title {
+                letter-spacing: -1px;
+            }
+
+            &-description {
+                letter-spacing: -0.2px;
+            }
+        }
+    }
+}
+
+/* HACK: tablets (768px ~ 1024px) */
 @media (min-width: 48em) and (max-width: 64em) {
     .hero {
         padding: $spacing-32 $spacing-32 $spacing-80;
-        gap: $spacing-64;
 
         &::after {
             @include blur-effect(73%, -50%);
@@ -96,14 +112,6 @@
         &__content {
             grid-template-columns: 1fr;
             row-gap: $spacing-64;
-
-            &-title {
-                letter-spacing: -1px;
-            }
-
-            &-description {
-                letter-spacing: -0.2px;
-            }
         }
     }
 }
@@ -116,20 +124,9 @@
 
     .hero {
         padding: $spacing-64 $spacing-48;
-        gap: $spacing-64;
 
         &::after {
             @include blur-effect(50%, -30%);
-        }
-
-        &__content {
-            &-title {
-                letter-spacing: -1px;
-            }
-
-            &-description {
-                letter-spacing: -0.2px;
-            }
         }
     }
 }
