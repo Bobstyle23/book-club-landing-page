@@ -83,8 +83,38 @@
 /* HACK: large mobiles (481px ~ 767px) */
 /* HACK: tablets (768px ~ 1024px) */
 
+/* HACK: small mobiles (320px ~ 480px) */
+
+@media (min-width: 20em) and (max-width: 30em) {
+    .hero {
+        padding: $spacing-24 $spacing-16 $spacing-80;
+        gap: $spacing-48;
+
+        &::after {
+            @include blur-effect(100%, 100%);
+        }
+
+        &__content {
+            grid-template-columns: 1fr;
+            row-gap: $spacing-64;
+
+            &-title {
+                font-size: 3.8rem;
+            }
+
+            &-description {
+                letter-spacing: -0.2px;
+            }
+
+            &-btn {
+                font-size: calc(1.2rem + .2vw);
+            }
+        }
+    }
+}
+
 // Repetitive styles for tablets
-@media (max-width: 79.063em) {
+@media (min-width: 48em) and (max-width: 79.063em) {
     .hero {
         gap: $spacing-64;
 
