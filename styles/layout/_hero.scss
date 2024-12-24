@@ -19,10 +19,10 @@
     }
 
     &__content {
-        display: grid;
+        @extend %grid-container;
+
         grid-template-columns: 1fr 54rem;
         column-gap: $spacing-64;
-        align-items: center;
 
         &-title {
             @extend %text-preset-1;
