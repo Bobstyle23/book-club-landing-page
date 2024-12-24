@@ -2,13 +2,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: $spacing-200;
+    gap: $spacing-16;
 }
 
 %button-style {
     border: none;
     border-radius: $border-radius-8;
-    padding: $spacing-250 $spacing-300;
+    padding: $spacing-20 $spacing-24;
     text-transform: uppercase;
 
     @extend %text-preset-6;
