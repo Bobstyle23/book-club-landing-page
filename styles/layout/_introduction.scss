@@ -1,0 +1,87 @@
+.introduction {
+    @extend %flexbox-style;
+
+    flex-direction: column;
+    gap: 12rem;
+    padding: 12rem 13.5rem;
+
+    &__content {
+        @extend %grid-container;
+
+        grid-template-columns: 56rem 1fr;
+        column-gap: $spacing-80;
+        position: relative;
+    }
+
+    &__image {
+        width: 100%;
+        border-radius: $border-radius-10;
+    }
+
+    &__text {
+        h2 {
+            margin-bottom: 3.4rem;
+        }
+
+        h3 {
+            margin-bottom: 2.4rem;
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                background-image: url("../../starter-code/assets/images/pattern-circle.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                width: 16rem;
+                height: 6.5rem;
+                bottom: 0;
+                left: 27%;
+            }
+        }
+    }
+
+    &__title {
+        @extend %text-preset-2;
+
+        color: $color-neutral-900;
+    }
+
+    &__list {
+        @extend %flexbox-style;
+
+        flex-direction: column;
+        align-items: baseline;
+        gap: $spacing-24;
+        list-style: none;
+
+        &--item {
+            @extend %text-preset-5;
+
+            @extend %flexbox-style;
+
+            gap: 1.4rem;
+            color: $color-neutral-700;
+            max-width: 43.1rem;
+        }
+    }
+
+    &__description {
+        @extend %text-preset-5;
+
+        color: $color-neutral-700;
+        max-width: 52rem;
+
+        span {
+            @extend %text-preset-5-semibold;
+        }
+    }
+
+    &__logos {
+        position: absolute;
+        bottom: 2rem;
+        left: 50%;
+        transform: translateX(-20%);
+    }
+}
