@@ -169,6 +169,10 @@
     }
 
     .hero {
+        &__content {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
         padding: $spacing-64 $spacing-48;
 
         &::after {

@@ -14,7 +14,8 @@
     }
 
     &__image {
-        width: 100%;
+        // width: 100%;
+        max-width: 56rem;
         border-radius: 2rem;
     }
 
@@ -101,6 +102,10 @@
             }
         }
 
+        &__image {
+            max-width: 100%;
+        }
+
         &__title {
             max-width: calc(100vw - 9.6rem);
         }
@@ -121,6 +126,35 @@
             right: 4rem;
             transform: translateX(0);
             left: auto;
+        }
+    }
+}
+
+//* HACK large tablets (1025px ~ 1265px)
+@media (min-width: 64.063em) and (max-width: 79.063em) {
+    .introduction {
+        padding: $spacing-64 $spacing-48;
+        gap: $spacing-64;
+
+        &__content {
+            grid-template-columns: 1fr 1fr;
+            column-gap: $spacing-64;
+        }
+
+        &__list {
+            &--item {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+//* HACK  (1266px ~ 1371px) */
+@media (min-width: 79.125em) and (max-width: 85.69em) {
+    .introduction {
+        &__content {
+            grid-template-columns: 1fr 1fr;
+            column-gap: $spacing-64;
         }
     }
 }

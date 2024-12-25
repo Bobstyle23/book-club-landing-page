@@ -15,3 +15,9 @@ body {
     line-height: 1;
     color: $color-neutral-900;
 }
+
+@media (min-width: 64.063em) and (max-width: 85.69em) {
+    html {
+        font-size: 56.25%;
+    }
+}

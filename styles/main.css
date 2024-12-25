@@ -55,6 +55,12 @@ body {
   color: #062630;
 }
 
+@media (min-width: 64.063em) and (max-width: 85.69em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
 .introduction__title, .primary, .alternate, .hero__content-rating p, .hero__content-title {
   font-size: 6.2rem;
   font-weight: 700;
@@ -298,6 +304,9 @@ body {
   .hero {
     padding: 6.4rem 4.8rem;
   }
+  .hero__content {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .hero::after {
     content: "";
     position: absolute;
@@ -327,7 +336,7 @@ body {
 }
 
 .introduction__image {
-  width: 100%;
+  max-width: 56rem;
   border-radius: 2rem;
 }
 
@@ -394,6 +403,9 @@ body {
   .introduction__content:nth-child(1) div {
     grid-row: 1 / 2;
   }
+  .introduction__image {
+    max-width: 100%;
+  }
   .introduction__title {
     max-width: calc(100vw - 9.6rem);
   }
@@ -409,5 +421,32 @@ body {
     right: 4rem;
     transform: translateX(0);
     left: auto;
+  }
+}
+
+@media (min-width: 64.063em) and (max-width: 79.063em) {
+  html {
+    font-size: 56.25%;
+  }
+  .introduction {
+    padding: 6.4rem 4.8rem;
+    gap: 6.4rem;
+  }
+  .introduction__content {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 6.4rem;
+  }
+  .introduction__list--item {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 79.125em) and (max-width: 85.69em) {
+  .introduction html {
+    font-size: 56.25%;
+  }
+  .introduction__content {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 6.4rem;
   }
 }
