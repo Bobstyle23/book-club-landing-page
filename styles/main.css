@@ -406,8 +406,8 @@ body {
 .introduction__logos {
   position: absolute;
   bottom: 2rem;
-  left: 50%;
-  transform: translateX(-20%);
+  left: 49%;
+  transform: translateX(-24%);
 }
 
 @media (min-width: 20em) and (max-width: 30em) {
