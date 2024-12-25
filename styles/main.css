@@ -216,7 +216,6 @@ body {
 /* HACK: small mobiles (320px ~ 480px) */
 /* HACK: large mobiles (481px ~ 767px) */
 /* HACK: tablets (768px ~ 1024px) */
-/* HACK: small mobiles (320px ~ 480px) */
 @media (min-width: 20em) and (max-width: 30em) {
   .hero {
     padding: 2.4rem 1.6rem 8rem;
@@ -251,7 +250,6 @@ body {
   }
 }
 
-/* HACK: large mobiles (481px ~ 767px) */
 @media (min-width: 30.063em) and (max-width: 47.94em) {
   .hero {
     padding: 3.2rem 3.2rem 4.8rem;
@@ -289,7 +287,6 @@ body {
   }
 }
 
-/* HACK: tablets (768px ~ 1024px) */
 @media (min-width: 48em) and (max-width: 64em) {
   .hero {
     padding: 3.2rem 3.2rem 8rem;
@@ -314,11 +311,7 @@ body {
   }
 }
 
-/* HACK: large tablets (1025px ~ 1265px) */
 @media (min-width: 64.063em) and (max-width: 79.063em) {
-  html {
-    font-size: 56.25%;
-  }
   .hero {
     padding: 6.4rem 4.8rem;
   }
@@ -588,4 +581,79 @@ body {
   border-radius: 0.4rem;
   text-align: center;
   padding: .8rem .4rem;
+}
+
+@media (min-width: 20em) and (max-width: 30em) {
+  .journey {
+    margin: 3.2rem 1.6rem;
+    padding: 4.8rem 3.2rem;
+    gap: 4.8rem;
+  }
+  .journey header {
+    max-width: 100%;
+  }
+  .journey__title {
+    font-size: 3.8rem;
+    letter-spacing: -.2rem;
+  }
+  .journey__steps {
+    grid-template-columns: 1fr;
+    row-gap: 3.2rem;
+  }
+  .journey__step {
+    justify-items: center;
+  }
+  .journey__step p {
+    justify-self: start;
+  }
+  .journey__step--number img {
+    display: none;
+  }
+}
+
+@media (min-width: 30.063em) and (max-width: 47.94em) {
+  .journey {
+    margin: 3.2rem 1.6rem;
+    padding: 3.2rem 2.4rem;
+    gap: 4.8rem;
+  }
+  .journey header {
+    max-width: 100%;
+  }
+  .journey__title {
+    font-size: 4.2rem;
+    letter-spacing: -.2rem;
+  }
+  .journey__steps {
+    grid-template-columns: 1fr 1fr;
+    gap: 3.2rem;
+  }
+  .journey__step p {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 48em) and (max-width: 64em) {
+  .journey {
+    margin: 3.2rem 3.2rem 8rem;
+    padding: 4.8rem 3.2rem;
+    gap: 4.8rem;
+  }
+  .journey__steps {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 6.4rem;
+    row-gap: 4.8rem;
+  }
+}
+
+@media (min-width: 64.063em) and (max-width: 79.063em) {
+  .journey {
+    margin: 6.4rem 4.8rem 8rem;
+    padding: 6.4rem 4.8rem;
+  }
+  .journey__steps {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 8rem;
+    row-gap: 6.4rem;
+  }
 }

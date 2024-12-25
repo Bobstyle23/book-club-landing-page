@@ -83,7 +83,7 @@
 /* HACK: large mobiles (481px ~ 767px) */
 /* HACK: tablets (768px ~ 1024px) */
 
-/* HACK: small mobiles (320px ~ 480px) */
+//* HACK: small mobiles (320px ~ 480px) */
 @media (min-width: 20em) and (max-width: 30em) {
     .hero {
         padding: $spacing-24 $spacing-16 $spacing-80;
@@ -112,7 +112,7 @@
     }
 }
 
-/* HACK: large mobiles (481px ~ 767px) */
+//* HACK: large mobiles (481px ~ 767px) */
 @media (min-width: 30.063em) and (max-width: 47.94em) {
     .hero {
         padding: $spacing-32 $spacing-32 $spacing-48;
@@ -129,7 +129,7 @@
     }
 }
 
-// Repetitive styles for tablets
+//* Repetitive styles for tablets
 @media (min-width: 48em) and (max-width: 79.063em) {
     .hero {
         gap: $spacing-64;
@@ -146,7 +146,7 @@
     }
 }
 
-/* HACK: tablets (768px ~ 1024px) */
+//* HACK: tablets (768px ~ 1024px) */
 @media (min-width: 48em) and (max-width: 64em) {
     .hero {
         padding: $spacing-32 $spacing-32 $spacing-80;
@@ -162,12 +162,8 @@
     }
 }
 
-/* HACK: large tablets (1025px ~ 1265px) */
+//* HACK: large tablets (1025px ~ 1265px) */
 @media (min-width: 64.063em) and (max-width: 79.063em) {
-    html {
-        font-size: 56.25%;
-    }
-
     .hero {
         &__content {
             grid-template-columns: repeat(2, 1fr);

@@ -67,3 +67,99 @@
         }
     }
 }
+
+//* HACK: small mobiles (320px ~ 480px) */
+@media (min-width: 20em) and (max-width: 30em) {
+    .journey {
+        margin: $spacing-32 $spacing-16;
+        padding: $spacing-48 $spacing-32;
+        gap: $spacing-48;
+
+        header {
+            max-width: 100%;
+        }
+
+        &__title {
+            font-size: 3.8rem;
+            letter-spacing: -.2rem;
+        }
+
+        &__steps {
+            grid-template-columns: 1fr;
+            row-gap: $spacing-32;
+        }
+
+        &__step {
+            justify-items: center;
+
+            p {
+                justify-self: start;
+            }
+
+            &--number {
+                img {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+//* HACK: large mobiles (481px ~ 767px) */
+@media (min-width: 30.063em) and (max-width: 47.94em) {
+    .journey {
+        margin: $spacing-32 $spacing-16;
+        padding: $spacing-32 $spacing-24;
+        gap: $spacing-48;
+
+        header {
+            max-width: 100%;
+        }
+
+        &__title {
+            font-size: 4.2rem;
+            letter-spacing: -.2rem;
+        }
+
+        &__steps {
+            grid-template-columns: 1fr 1fr;
+            gap: $spacing-32;
+        }
+
+        &__step {
+            p {
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
+
+//* HACK: tablets (768px ~ 1024px) */
+
+@media (min-width: 48em) and (max-width: 64em) {
+    .journey {
+        margin: $spacing-32 $spacing-32 $spacing-80;
+        padding: $spacing-48 $spacing-32;
+        gap: $spacing-48;
+
+        &__steps {
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: $spacing-64;
+            row-gap: $spacing-48;
+        }
+    }
+}
+
+//* HACK: large tablets (1025px ~ 1265px)
+@media (min-width: 64.063em) and (max-width: 79.063em) {
+    .journey {
+        margin: $spacing-64 $spacing-48 $spacing-80;
+        padding: $spacing-64 $spacing-48;
+
+        &__steps {
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: $spacing-80;
+            row-gap: $spacing-64;
+        }
+    }
+}
