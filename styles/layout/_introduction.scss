@@ -34,7 +34,8 @@
 
         color: $color-neutral-900;
 
-        span {
+        div {
+            display: inline-block;
             position: relative;
             z-index: 1;
 
@@ -84,6 +85,89 @@
         bottom: 2rem;
         left: 50%;
         transform: translateX(-20%);
+    }
+}
+
+//* HACK small mobiles (320px ~ 480px)
+@media (min-width: 20em) and (max-width: 30em) {
+    .introduction {
+        padding: $spacing-64 $spacing-16;
+        gap: $spacing-64;
+
+        &__content {
+            grid-template-columns: 1fr;
+            row-gap: 4rem;
+
+            &:nth-child(1) div {
+                grid-row: 1 / 2;
+            }
+        }
+
+        &__title {
+            font-size: 3.4rem;
+
+            div {
+                img {
+                    width: 11rem;
+                    height: auto;
+                }
+            }
+        }
+
+        &__description {
+            max-width: 34rem;
+        }
+
+        h2, h3 {
+            margin-bottom: $spacing-24;
+        }
+
+        &__image {
+            max-width: 100%;
+        }
+
+        &__list {
+            gap: $spacing-16;
+        }
+
+        &__logos {
+            display: none;
+        }
+    }
+}
+
+// * HACK: large mobiles (481px ~ 767px) */
+@media (min-width: 30.063em) and (max-width: 47.94em) {
+    .introduction {
+        padding: $spacing-32 $spacing-32 $spacing-48;
+        gap: $spacing-48;
+
+        &__content {
+            grid-template-columns: 1fr;
+            row-gap: $spacing-64;
+
+            &:nth-child(1) div {
+                grid-row: 1 / 2;
+            }
+        }
+
+        &__image {
+            max-width: 100%;
+        }
+
+        &__list {
+            &--item {
+                max-width: 100%;
+            }
+        }
+
+        &__description {
+            max-width: 100%;
+        }
+
+        &__logos {
+            display: none;
+        }
     }
 }
 
@@ -138,7 +222,7 @@
 
         &__content {
             grid-template-columns: 1fr 1fr;
-            column-gap: $spacing-64;
+            row-gap: $spacing-64;
         }
 
         &__list {
