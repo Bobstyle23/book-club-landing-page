@@ -586,7 +586,7 @@ body {
 
 @media (min-width: 20em) and (max-width: 30em) {
   .journey {
-    margin: 3.2rem 1.6rem;
+    margin: 0 1.6rem 6.4rem;
     padding: 4.8rem 3.2rem;
     gap: 4.8rem;
   }
@@ -804,15 +804,36 @@ body {
   width: 100%;
 }
 
+@media (min-width: 20em) and (max-width: 30em) {
+  .pricing {
+    margin: 0 auto 6.4rem;
+    padding: 0 1.6rem;
+    gap: 2.4rem;
+    align-items: stretch;
+  }
+  .pricing__options {
+    grid-template-columns: 1fr;
+    row-gap: 2.4rem;
+  }
+  .pricing__option--pro {
+    padding: 2.4rem;
+  }
+  .pricing__header {
+    font-size: 3.4rem;
+  }
+}
+
 @media (min-width: 30.063em) and (max-width: 47.94em) {
   .pricing {
     margin: 0 auto 6.4rem;
     padding: 0 2.4rem;
     gap: 4rem;
+    align-items: stretch;
   }
   .pricing__options {
-    grid-template-columns: 35rem;
+    grid-template-columns: 0.75fr;
     gap: 2.4rem;
+    justify-content: center;
   }
   .pricing__option--pro {
     padding: 2.4rem;
@@ -824,11 +845,12 @@ body {
     margin: 0 auto 8rem;
     padding: 0 3.2rem;
     gap: 4rem;
-    align-items: baseline;
+    align-items: stretch;
   }
   .pricing__options {
-    grid-template-columns: repeat(2, 34rem);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2.4rem;
+    justify-content: center;
   }
   .pricing__option--starter, .pricing__option--pro, .pricing__option--enterprise {
     padding: 2.4rem;

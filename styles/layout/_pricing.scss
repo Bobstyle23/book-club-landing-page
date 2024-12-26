@@ -97,16 +97,43 @@
     }
 }
 
+//* HACK: small mobiles (320px ~ 480px) */
+@media (min-width: 20em) and (max-width: 30em) {
+    .pricing {
+        margin: 0 auto $spacing-64;
+        padding: 0 $spacing-16;
+        gap: $spacing-24;
+        align-items: stretch;
+
+        &__options {
+            grid-template-columns: 1fr;
+            row-gap: $spacing-24;
+        }
+
+        &__option {
+            &--pro {
+                padding: $spacing-24;
+            }
+        }
+
+        &__header {
+            font-size: 3.4rem;
+        }
+    }
+}
+
 //* HACK: large mobiles (481px ~ 767px) */
 @media (min-width: 30.063em) and (max-width: 47.94em) {
     .pricing {
         margin: 0 auto $spacing-64;
         padding: 0 $spacing-24;
         gap: 4rem;
+        align-items: stretch;
 
         &__options {
-            grid-template-columns: 35rem;
+            grid-template-columns: 0.75fr;
             gap: $spacing-24;
+            justify-content: center;
         }
 
         &__option {
@@ -123,11 +150,12 @@
         margin: 0 auto $spacing-80;
         padding: 0 $spacing-32;
         gap: 4rem;
-        align-items: baseline;
+        align-items: stretch;
 
         &__options {
-            grid-template-columns: repeat(2, 34rem);
+            grid-template-columns: repeat(2, 1fr);
             gap: $spacing-24;
+            justify-content: center;
         }
 
         &__option {
