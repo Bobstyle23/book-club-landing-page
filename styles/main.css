@@ -886,3 +886,37 @@ body {
 .review__author {
   color: #385159;
 }
+
+@media (min-width: 20em) and (max-width: 30em) {
+  .review {
+    margin: 6.4rem auto;
+    padding: 0 1.6rem;
+    align-items: baseline;
+  }
+  .review__description {
+    text-align: left;
+    font-size: 2.4rem;
+  }
+}
+
+@media (min-width: 30.063em) and (max-width: 47.94em) {
+  .review {
+    padding: 0 3.2rem;
+    align-items: baseline;
+  }
+  .review__description {
+    text-align: left;
+    font-size: 3.2rem;
+    line-height: 1.1;
+  }
+}
+
+@media (min-width: 48em) and (max-width: 64em) {
+  .review {
+    padding: 0 3.2rem;
+    align-items: baseline;
+  }
+  .review__description {
+    text-align: left;
+  }
+}
