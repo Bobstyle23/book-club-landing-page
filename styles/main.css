@@ -137,7 +137,7 @@ body {
 }
 
 .hero {
-  background-image: url("/starter-code/assets/images/pattern-light-bg.svg");
+  background-image: url("../starter-code/assets/images/pattern-light-bg.svg");
   background-color: #faf5f3;
   width: 100%;
   height: auto;
@@ -521,7 +521,7 @@ body {
 
 .journey {
   margin: 0 13.5rem 12rem;
-  background-image: url("../../starter-code/assets/images/pattern-light-bg.svg");
+  background-image: url("../starter-code/assets/images/pattern-light-bg.svg");
   background-color: #faf5f3;
   padding: 8rem 0;
   position: relative;
@@ -925,7 +925,7 @@ body {
   max-width: 144rem;
   margin: 0 auto;
   background-color: #062630;
-  background-image: url("../../starter-code/assets/images/pattern-dark-bg.svg");
+  background-image: url("../starter-code/assets/images/pattern-dark-bg.svg");
   padding: 8rem 13.5rem 0;
   border-top-left-radius: 1.2rem;
   border-top-right-radius: 1.2rem;
