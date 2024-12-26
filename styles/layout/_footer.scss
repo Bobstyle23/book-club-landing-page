@@ -78,3 +78,41 @@
         }
     }
 }
+
+//* HACK: small mobiles (320px ~ 480px)
+@media (min-width: 20em) and (max-width: 30em) {
+    .footer {
+        padding: $spacing-48 $spacing-16 0;
+
+        &__title {
+            font-size: 3.4rem;
+        }
+
+        &__btn {
+            font-size: 1.6rem;
+        }
+
+        &__copyright {
+            flex-direction: column;
+            padding: $spacing-24 $spacing-32;
+        }
+    }
+}
+
+//* HACK: small tablets (481px ~ 767px)
+@media (min-width: 30.063em) and (max-width: 47.94em) {
+    .footer {
+        padding: $spacing-48 $spacing-24 0;
+
+        &__title {
+            font-size: 4.2rem;
+        }
+    }
+}
+
+//* HACK: tablets (768px ~ 1024px)
+@media (min-width: 48em) and (max-width: 64em) {
+    .footer {
+        padding: $spacing-64 $spacing-32 0;
+    }
+}

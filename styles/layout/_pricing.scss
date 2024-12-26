@@ -144,7 +144,7 @@
     }
 }
 
-//* HACK: small mobiles (768px ~ 1024px) */
+//* HACK: tablets (768px ~ 1024px) */
 @media (min-width: 48em) and (max-width: 64em) {
     .pricing {
         margin: 0 auto $spacing-80;
