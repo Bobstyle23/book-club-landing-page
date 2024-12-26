@@ -96,3 +96,50 @@
         }
     }
 }
+
+//* HACK: large mobiles (481px ~ 767px) */
+@media (min-width: 30.063em) and (max-width: 47.94em) {
+    .pricing {
+        margin: 0 auto $spacing-64;
+        padding: 0 $spacing-24;
+        gap: 4rem;
+
+        &__options {
+            grid-template-columns: 35rem;
+            gap: $spacing-24;
+        }
+
+        &__option {
+            &--pro {
+                padding: $spacing-24;
+            }
+        }
+    }
+}
+
+//* HACK: small mobiles (768px ~ 1024px) */
+@media (min-width: 48em) and (max-width: 64em) {
+    .pricing {
+        margin: 0 auto $spacing-80;
+        padding: 0 $spacing-32;
+        gap: 4rem;
+        align-items: baseline;
+
+        &__options {
+            grid-template-columns: repeat(2, 34rem);
+            gap: $spacing-24;
+        }
+
+        &__option {
+            &--starter, &--pro, &--enterprise {
+                padding: $spacing-24;
+            }
+
+            &:nth-child(2) {
+                &::after {
+                    @include blur-effect(57%, -107%);
+                }
+            }
+        }
+    }
+}
