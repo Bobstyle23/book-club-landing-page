@@ -26,7 +26,7 @@
         @extend %text-preset-2;
 
         line-height: 1.2;
-        letter-spacing: -.4rem;
+        letter-spacing: -0.4rem;
     }
 
     &__steps {
@@ -40,7 +40,8 @@
         @extend %text-preset-4-regular;
 
         &--number {
-            span, img {
+            span,
+            img {
                 display: inline-block;
             }
 
@@ -52,7 +53,7 @@
                 height: 4rem;
                 border-radius: $border-radius-4;
                 text-align: center;
-                padding: .8rem .4rem;
+                padding: 0.8rem 0.4rem;
             }
 
             @extend %flexbox-style;
@@ -75,13 +76,17 @@
         padding: $spacing-48 $spacing-32;
         gap: $spacing-48;
 
+        &::after {
+            @include blur-effect(100%, 100%);
+        }
+
         header {
             max-width: 100%;
         }
 
         &__title {
             font-size: 3.8rem;
-            letter-spacing: -.2rem;
+            letter-spacing: -0.2rem;
         }
 
         &__steps {
@@ -112,13 +117,17 @@
         padding: $spacing-32 $spacing-24;
         gap: $spacing-48;
 
+        &::after {
+            @include blur-effect(100%, 100%);
+        }
+
         header {
             max-width: 100%;
         }
 
         &__title {
             font-size: 4.2rem;
-            letter-spacing: -.2rem;
+            letter-spacing: -0.2rem;
         }
 
         &__steps {
@@ -142,6 +151,10 @@
         padding: $spacing-48 $spacing-32;
         gap: $spacing-48;
 
+        &::after {
+            @include blur-effect(53%, -33%);
+        }
+
         &__steps {
             grid-template-columns: repeat(2, 1fr);
             column-gap: $spacing-64;
@@ -155,6 +168,10 @@
     .journey {
         margin: $spacing-64 $spacing-48 $spacing-80;
         padding: $spacing-64 $spacing-48;
+
+        &::after {
+            @include blur-effect(50%, -33%);
+        }
 
         &__steps {
             grid-template-columns: repeat(3, 1fr);
