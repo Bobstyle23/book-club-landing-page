@@ -61,7 +61,7 @@ body {
   }
 }
 
-.journey__step, .pricing__option--title, .pricing__option--price, .review__description, .introduction__title, .journey__title, .pricing__header, .primary, .alternate, .hero__content-rating p, .journey__step p, .hero__content-title {
+.journey__step, .pricing__option--title, .pricing__option--price, .review__description, .introduction__title, .journey__title, .pricing__header, .footer__title, .primary, .alternate, .hero__content-rating p, .footer__review-info p, .footer__copyright-author, .journey__step p, .hero__content-title {
   font-size: 6.2rem;
   font-weight: 700;
   font-family: "Martian Mono";
@@ -69,7 +69,7 @@ body {
   letter-spacing: -2px;
 }
 
-.journey__step, .pricing__option--title, .pricing__option--price, .review__description, .introduction__title, .journey__title, .pricing__header {
+.journey__step, .pricing__option--title, .pricing__option--price, .review__description, .introduction__title, .journey__title, .pricing__header, .footer__title {
   font-size: 5rem;
   font-weight: 600;
   line-height: 1.3;
@@ -105,20 +105,20 @@ body {
   font-weight: 600;
 }
 
-.primary, .alternate, .hero__content-rating p, .journey__step p {
+.primary, .alternate, .hero__content-rating p, .footer__review-info p, .footer__copyright-author, .journey__step p {
   font-size: 1.8rem;
   font-weight: 600;
   line-height: 1.3;
   letter-spacing: -1px;
 }
 
-.hero__content-rating p {
+.hero__content-rating p, .footer__review-info p, .footer__copyright-author {
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 1.2;
 }
 
-.primary, .alternate, .hero, .hero__content-reviews, .introduction, .introduction__list, .introduction__list--item, .journey, .journey__step--number, .pricing, .pricing__option, .pricing__option--list, .pricing__option--list-item, .review {
+.primary, .alternate, .hero, .hero__content-reviews, .introduction, .introduction__list, .introduction__list--item, .journey, .journey__step--number, .pricing, .pricing__option, .pricing__option--list, .pricing__option--list-item, .review, .footer__header, .footer__review, .footer__copyright, .footer__copyright-links {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -919,4 +919,69 @@ body {
   .review__description {
     text-align: left;
   }
+}
+
+.footer {
+  max-width: 144rem;
+  margin: 0 auto;
+  background-color: #062630;
+  background-image: url("../../starter-code/assets/images/pattern-dark-bg.svg");
+  padding: 8rem 13.5rem 0;
+  border-top-left-radius: 1.2rem;
+  border-top-right-radius: 1.2rem;
+}
+
+.footer__content {
+  margin-bottom: 6.4rem;
+}
+
+.footer__header {
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.footer__title {
+  color: #faf5f3;
+  text-align: center;
+  max-width: 75.3rem;
+}
+
+.footer__btn {
+  margin-bottom: 2.4rem;
+}
+
+.footer__review {
+  gap: 1.2rem;
+}
+
+.footer__review-avatar {
+  width: 11rem;
+  height: auto;
+}
+
+.footer__review-info img {
+  margin-bottom: 0.4rem;
+}
+
+.footer__review-info p {
+  color: #faf5f3;
+}
+
+.footer hr {
+  width: 100%;
+  border: 1px solid #385159;
+}
+
+.footer__copyright {
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.4rem 0;
+}
+
+.footer__copyright-author {
+  color: #faf5f3;
+}
+
+.footer__copyright-links {
+  gap: 2.4rem;
 }
