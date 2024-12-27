@@ -97,8 +97,7 @@
     }
 }
 
-//* HACK: small mobiles (320px ~ 480px) */
-@media (min-width: 20em) and (max-width: 30em) {
+@include respond-to($breakpoint-small-mobiles) {
     .pricing {
         margin: 0 auto $spacing-64;
         padding: 0 $spacing-16;
@@ -122,13 +121,17 @@
     }
 }
 
-//* HACK: large mobiles (481px ~ 767px) */
-@media (min-width: 30.063em) and (max-width: 47.94em) {
+
+@include respond-to($breakpoint-large-mobiles) {
     .pricing {
         margin: 0 auto $spacing-64;
         padding: 0 $spacing-24;
         gap: 4rem;
         align-items: stretch;
+
+        &__header {
+            text-align: center;
+        }
 
         &__options {
             grid-template-columns: 0.75fr;
@@ -144,8 +147,8 @@
     }
 }
 
-//* HACK: tablets (768px ~ 1024px) */
-@media (min-width: 48em) and (max-width: 64em) {
+
+@include respond-to($breakpoint-tablets) {
     .pricing {
         margin: 0 auto $spacing-80;
         padding: 0 $spacing-32;

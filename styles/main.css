@@ -697,7 +697,6 @@ body {
   .journey {
     margin: 6.4rem 4.8rem 8rem;
     padding: 6.4rem 4.8rem;
-    border: 1px solid red;
   }
   .journey::after {
     content: "";
@@ -835,6 +834,9 @@ body {
     gap: 4rem;
     align-items: stretch;
   }
+  .pricing__header {
+    text-align: center;
+  }
   .pricing__options {
     grid-template-columns: 0.75fr;
     gap: 2.4rem;
@@ -851,6 +853,7 @@ body {
     padding: 0 3.2rem;
     gap: 4rem;
     align-items: stretch;
+    border: 1px solid red;
   }
   .pricing__options {
     grid-template-columns: repeat(2, 1fr);
