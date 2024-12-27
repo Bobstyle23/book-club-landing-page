@@ -8,14 +8,13 @@
     &__content {
         @extend %grid-container;
 
-        grid-template-columns: 56rem 1fr;
+        grid-template-columns: 1fr 1fr;
         column-gap: $spacing-80;
         position: relative;
     }
 
     &__image {
-        // width: 100%;
-        max-width: 56rem;
+        max-width: 100%;
         border-radius: 2rem;
     }
 
@@ -88,8 +87,7 @@
     }
 }
 
-//* HACK small mobiles (320px ~ 480px)
-@media (min-width: 20em) and (max-width: 30em) {
+@include respond-to($breakpoint-small-mobiles) {
     .introduction {
         padding: $spacing-64 $spacing-16;
         gap: $spacing-64;
@@ -136,8 +134,8 @@
     }
 }
 
-// * HACK: large mobiles (481px ~ 767px) */
-@media (min-width: 30.063em) and (max-width: 47.94em) {
+
+@include respond-to($breakpoint-large-mobiles) {
     .introduction {
         padding: $spacing-32 $spacing-32 $spacing-48;
         gap: $spacing-48;
@@ -171,8 +169,8 @@
     }
 }
 
-// * HACK: tablets (768px ~ 1024px) */
-@media (min-width: 48em) and (max-width: 64em) {
+
+@include respond-to($breakpoint-tablets) {
     .introduction {
         padding: $spacing-80 $spacing-32;
         gap: $spacing-80;
@@ -214,8 +212,8 @@
     }
 }
 
-//* HACK large tablets (1025px ~ 1265px)
-@media (min-width: 64.063em) and (max-width: 79.063em) {
+
+@include respond-to($breakpoint-large-tablets) {
     .introduction {
         padding: $spacing-64 $spacing-48;
         gap: $spacing-64;
@@ -232,6 +230,7 @@
         }
     }
 }
+
 
 //* HACK  (1266px ~ 1371px) */
 @media (min-width: 79.125em) and (max-width: 85.69em) {

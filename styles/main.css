@@ -345,13 +345,13 @@ body {
 }
 
 .introduction__content {
-  grid-template-columns: 56rem 1fr;
+  grid-template-columns: 1fr 1fr;
   column-gap: 8rem;
   position: relative;
 }
 
 .introduction__image {
-  max-width: 56rem;
+  max-width: 100%;
   border-radius: 2rem;
 }
 
