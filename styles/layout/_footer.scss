@@ -79,8 +79,7 @@
     }
 }
 
-//* HACK: small mobiles (320px ~ 480px)
-@media (min-width: 20em) and (max-width: 30em) {
+@include respond-to($breakpoint-small-mobiles) {
     .footer {
         padding: $spacing-48 $spacing-16 0;
 
@@ -89,7 +88,7 @@
         }
 
         &__btn {
-            font-size: 1.6rem;
+            font-size: calc(1.2rem + .2vw);
         }
 
         &__copyright {
@@ -99,8 +98,8 @@
     }
 }
 
-//* HACK: small tablets (481px ~ 767px)
-@media (min-width: 30.063em) and (max-width: 47.94em) {
+
+@include respond-to($breakpoint-large-mobiles) {
     .footer {
         padding: $spacing-48 $spacing-24 0;
 
@@ -110,8 +109,8 @@
     }
 }
 
-//* HACK: tablets (768px ~ 1024px)
-@media (min-width: 48em) and (max-width: 64em) {
+
+@include respond-to($breakpoint-tablets) {
     .footer {
         padding: $spacing-64 $spacing-32 0;
     }

@@ -1001,7 +1001,7 @@ body {
     font-size: 3.4rem;
   }
   .footer__btn {
-    font-size: 1.6rem;
+    font-size: calc(1.2rem + .2vw);
   }
   .footer__copyright {
     flex-direction: column;
