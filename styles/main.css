@@ -853,7 +853,6 @@ body {
     padding: 0 3.2rem;
     gap: 4rem;
     align-items: stretch;
-    border: 1px solid red;
   }
   .pricing__options {
     grid-template-columns: repeat(2, 1fr);
