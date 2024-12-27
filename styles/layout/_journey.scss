@@ -69,8 +69,7 @@
     }
 }
 
-//* HACK: small mobiles (320px ~ 480px) */
-@media (min-width: 20em) and (max-width: 30em) {
+@include respond-to($breakpoint-small-mobiles) {
     .journey {
         margin: 0 $spacing-16 $spacing-64;
         padding: $spacing-48 $spacing-32;
@@ -110,8 +109,8 @@
     }
 }
 
-//* HACK: large mobiles (481px ~ 767px) */
-@media (min-width: 30.063em) and (max-width: 47.94em) {
+
+@include respond-to($breakpoint-large-mobiles) {
     .journey {
         margin: $spacing-32 $spacing-24;
         padding: $spacing-32 $spacing-24;
@@ -143,9 +142,8 @@
     }
 }
 
-//* HACK: tablets (768px ~ 1024px) */
 
-@media (min-width: 48em) and (max-width: 64em) {
+@include respond-to($breakpoint-tablets) {
     .journey {
         margin: $spacing-32 $spacing-32 $spacing-80;
         padding: $spacing-48 $spacing-32;
@@ -163,8 +161,8 @@
     }
 }
 
-//* HACK: large tablets (1025px ~ 1265px)
-@media (min-width: 64.063em) and (max-width: 79.063em) {
+
+@include respond-to($breakpoint-large-tablets) {
     .journey {
         margin: $spacing-64 $spacing-48 $spacing-80;
         padding: $spacing-64 $spacing-48;
