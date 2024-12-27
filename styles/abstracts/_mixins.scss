@@ -12,3 +12,9 @@
     pointer-events: none;
     z-index: -1;
 }
+
+@mixin respond-to($breakpoint) {
+    @media #{$breakpoint} {
+        @content;
+    }
+}

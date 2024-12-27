@@ -213,9 +213,6 @@ body {
   border-radius: 1rem;
 }
 
-/* HACK: small mobiles (320px ~ 480px) */
-/* HACK: large mobiles (481px ~ 767px) */
-/* HACK: tablets (768px ~ 1024px) */
 @media (min-width: 20em) and (max-width: 30em) {
   .hero {
     padding: 2.4rem 1.6rem 8rem;
@@ -317,6 +314,13 @@ body {
   }
   .hero__content {
     grid-template-columns: repeat(2, 1fr);
+    align-items: stretch;
+  }
+  .hero__content-info {
+    align-self: center;
+  }
+  .hero__content-title {
+    font-size: 5.4rem;
   }
   .hero::after {
     content: "";
