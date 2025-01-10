@@ -1,3 +1,81 @@
+.introduction {
+  gap: $spacing-64;
+  padding: 0 $spacing-16;
+  margin-bottom: $spacing-64;
+
+  &,
+  &__text,
+  &__list,
+  &__list--item {
+    @extend %flexbox-style;
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  &__content {
+    @extend %grid-container;
+    row-gap: $spacing-40;
+  }
+
+  &__text {
+    gap: $spacing-24;
+  }
+
+  &__list {
+    gap: $spacing-16;
+
+    &--item {
+      @extend %text-preset-5;
+      flex-direction: row;
+      align-items: center;
+      list-style: none;
+      gap: 1.4rem;
+    }
+  }
+
+  &__title {
+    @extend %text-preset-2-mobile;
+    color: $color-neutral-900;
+
+    div {
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+
+      img {
+        max-width: 11rem;
+        min-height: auto;
+        display: inline;
+        position: absolute;
+        top: 0;
+        left: -1.7rem;
+      }
+    }
+  }
+
+  &__logos {
+    display: none;
+  }
+
+  &__description {
+    @extend %text-preset-5;
+    color: $color-neutral-700;
+
+    span {
+      @extend %text-preset-5-semibold;
+    }
+  }
+
+  &__image {
+    display: block;
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: $border-radius-12;
+    }
+  }
+}
+
 /* .introduction { */
 /*     @extend %flexbox-style; */
 /**/
