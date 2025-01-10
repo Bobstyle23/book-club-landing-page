@@ -1,115 +1,115 @@
-.footer {
-  max-width: 144rem;
-  margin: 0 auto;
-  background-color: $color-neutral-900;
-  background-image: url("../assets/images/pattern-dark-bg.svg");
-  padding: $spacing-80 13.5rem 0;
-  border-top-left-radius: $border-radius-12;
-  border-top-right-radius: $border-radius-12;
-
-  &__content {
-    margin-bottom: $spacing-64;
-  }
-
-  &__header {
-    @extend %flexbox-style;
-
-    flex-direction: column;
-    gap: 4rem;
-  }
-
-  &__title {
-    @extend %text-preset-2;
-
-    color: $color-neutral-100;
-    text-align: center;
-    max-width: 75.3rem;
-  }
-
-  &__btn {
-    margin-bottom: $spacing-24;
-  }
-
-  &__review {
-    @extend %flexbox-style;
-
-    gap: $spacing-12;
-
-    &-avatar {
-      width: 11rem;
-      height: auto;
-    }
-
-    &-info {
-      img {
-        margin-bottom: $spacing-4;
-      }
-
-      p {
-        @extend %text-preset-7;
-
-        color: $color-neutral-100;
-      }
-    }
-  }
-
-  hr {
-    width: 100%;
-    border: 1px solid $color-neutral-700;
-  }
-
-  &__copyright {
-    @extend %flexbox-style;
-
-    justify-content: space-between;
-    align-items: center;
-    padding: $spacing-24 0;
-
-    &-author {
-      @extend %text-preset-7;
-
-      color: $color-neutral-100;
-    }
-
-    &-links {
-      @extend %flexbox-style;
-
-      gap: $spacing-24;
-    }
-  }
-}
-
-@include respond-to($breakpoint-small-mobiles) {
-  .footer {
-    padding: $spacing-48 $spacing-16 0;
-
-    &__title {
-      font-size: 3.4rem;
-    }
-
-    &__btn {
-      font-size: calc(1.2rem + 0.2vw);
-    }
-
-    &__copyright {
-      flex-direction: column;
-      padding: $spacing-24 $spacing-32;
-    }
-  }
-}
-
-@include respond-to($breakpoint-large-mobiles) {
-  .footer {
-    padding: $spacing-48 $spacing-24 0;
-
-    &__title {
-      font-size: 4.2rem;
-    }
-  }
-}
-
-@include respond-to($breakpoint-tablets) {
-  .footer {
-    padding: $spacing-64 $spacing-32 0;
-  }
-}
+/* .footer { */
+/*   max-width: 144rem; */
+/*   margin: 0 auto; */
+/*   background-color: $color-neutral-900; */
+/*   background-image: url("../assets/images/pattern-dark-bg.svg"); */
+/*   padding: $spacing-80 13.5rem 0; */
+/*   border-top-left-radius: $border-radius-12; */
+/*   border-top-right-radius: $border-radius-12; */
+/**/
+/*   &__content { */
+/*     margin-bottom: $spacing-64; */
+/*   } */
+/**/
+/*   &__header { */
+/*     @extend %flexbox-style; */
+/**/
+/*     flex-direction: column; */
+/*     gap: 4rem; */
+/*   } */
+/**/
+/*   &__title { */
+/*     @extend %text-preset-2; */
+/**/
+/*     color: $color-neutral-100; */
+/*     text-align: center; */
+/*     max-width: 75.3rem; */
+/*   } */
+/**/
+/*   &__btn { */
+/*     margin-bottom: $spacing-24; */
+/*   } */
+/**/
+/*   &__review { */
+/*     @extend %flexbox-style; */
+/**/
+/*     gap: $spacing-12; */
+/**/
+/*     &-avatar { */
+/*       width: 11rem; */
+/*       height: auto; */
+/*     } */
+/**/
+/*     &-info { */
+/*       img { */
+/*         margin-bottom: $spacing-4; */
+/*       } */
+/**/
+/*       p { */
+/*         @extend %text-preset-7; */
+/**/
+/*         color: $color-neutral-100; */
+/*       } */
+/*     } */
+/*   } */
+/**/
+/*   hr { */
+/*     width: 100%; */
+/*     border: 1px solid $color-neutral-700; */
+/*   } */
+/**/
+/*   &__copyright { */
+/*     @extend %flexbox-style; */
+/**/
+/*     justify-content: space-between; */
+/*     align-items: center; */
+/*     padding: $spacing-24 0; */
+/**/
+/*     &-author { */
+/*       @extend %text-preset-7; */
+/**/
+/*       color: $color-neutral-100; */
+/*     } */
+/**/
+/*     &-links { */
+/*       @extend %flexbox-style; */
+/**/
+/*       gap: $spacing-24; */
+/*     } */
+/*   } */
+/* } */
+/**/
+/* @include respond-to($breakpoint-small-mobiles) { */
+/*   .footer { */
+/*     padding: $spacing-48 $spacing-16 0; */
+/**/
+/*     &__title { */
+/*       font-size: 3.4rem; */
+/*     } */
+/**/
+/*     &__btn { */
+/*       font-size: calc(1.2rem + 0.2vw); */
+/*     } */
+/**/
+/*     &__copyright { */
+/*       flex-direction: column; */
+/*       padding: $spacing-24 $spacing-32; */
+/*     } */
+/*   } */
+/* } */
+/**/
+/* @include respond-to($breakpoint-large-mobiles) { */
+/*   .footer { */
+/*     padding: $spacing-48 $spacing-24 0; */
+/**/
+/*     &__title { */
+/*       font-size: 4.2rem; */
+/*     } */
+/*   } */
+/* } */
+/**/
+/* @include respond-to($breakpoint-tablets) { */
+/*   .footer { */
+/*     padding: $spacing-64 $spacing-32 0; */
+/*   } */
+/* } */

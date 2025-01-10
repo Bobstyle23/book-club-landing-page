@@ -1,243 +1,243 @@
-.introduction {
-    @extend %flexbox-style;
-
-    flex-direction: column;
-    gap: 12rem;
-    padding: 12rem 13.5rem;
-
-    &__content {
-        @extend %grid-container;
-
-        grid-template-columns: 1fr 1fr;
-        column-gap: $spacing-80;
-        position: relative;
-    }
-
-    &__image {
-        max-width: 100%;
-        border-radius: 2rem;
-    }
-
-    &__text {
-        h2 {
-            margin-bottom: 3.4rem;
-        }
-
-        h3 {
-            margin-bottom: 2.4rem;
-        }
-    }
-
-    &__title {
-        @extend %text-preset-2;
-
-        color: $color-neutral-900;
-
-        div {
-            display: inline-block;
-            position: relative;
-            z-index: 1;
-
-            img {
-                width: 16rem;
-                height: 6rem;
-                display: inline;
-                position: absolute;
-                top: 0;
-                left: -1.7rem;
-            }
-        }
-    }
-
-    &__list {
-        @extend %flexbox-style;
-
-        flex-direction: column;
-        align-items: baseline;
-        gap: $spacing-24;
-        list-style: none;
-
-        &--item {
-            @extend %text-preset-5;
-
-            @extend %flexbox-style;
-
-            gap: 1.4rem;
-            color: $color-neutral-700;
-            max-width: 43.1rem;
-        }
-    }
-
-    &__description {
-        @extend %text-preset-5;
-
-        color: $color-neutral-700;
-        max-width: 52rem;
-
-        span {
-            @extend %text-preset-5-semibold;
-        }
-    }
-
-    &__logos {
-        position: absolute;
-        bottom: 2rem;
-        left: 49%;
-        transform: translateX(-24%);
-    }
-}
-
-@include respond-to($breakpoint-small-mobiles) {
-    .introduction {
-        padding: $spacing-64 $spacing-16;
-        gap: $spacing-64;
-
-        &__content {
-            grid-template-columns: 1fr;
-            row-gap: 4rem;
-
-            &:nth-child(1) div {
-                grid-row: 1 / 2;
-            }
-        }
-
-        &__title {
-            font-size: 3.4rem;
-
-            div {
-                img {
-                    width: 11rem;
-                    height: auto;
-                }
-            }
-        }
-
-        &__description {
-            max-width: 34rem;
-        }
-
-        h2, h3 {
-            margin-bottom: $spacing-24;
-        }
-
-        &__image {
-            max-width: 100%;
-        }
-
-        &__list {
-            gap: $spacing-16;
-        }
-
-        &__logos {
-            display: none;
-        }
-    }
-}
-
-
-@include respond-to($breakpoint-large-mobiles) {
-    .introduction {
-        padding: $spacing-32 $spacing-32 $spacing-48;
-        gap: $spacing-48;
-
-        &__content {
-            grid-template-columns: 1fr;
-            row-gap: $spacing-64;
-
-            &:nth-child(1) div {
-                grid-row: 1 / 2;
-            }
-        }
-
-        &__image {
-            max-width: 100%;
-        }
-
-        &__list {
-            &--item {
-                max-width: 100%;
-            }
-        }
-
-        &__description {
-            max-width: 100%;
-        }
-
-        &__logos {
-            display: none;
-        }
-    }
-}
-
-
-@include respond-to($breakpoint-tablets) {
-    .introduction {
-        padding: $spacing-80 $spacing-32;
-        gap: $spacing-80;
-
-        &__content {
-            grid-template-columns: 1fr;
-            row-gap: 4rem;
-
-            &:nth-child(1) div {
-                grid-row: 1 / 2;
-            }
-        }
-
-        &__image {
-            max-width: 100%;
-        }
-
-        &__title {
-            max-width: calc(100vw - 9.6rem);
-        }
-
-        &__list {
-            &--item {
-                max-width: 100%;
-            }
-        }
-
-        &__description {
-            max-width: 100%;
-        }
-
-        &__logos {
-            position: absolute;
-            bottom: 4rem;
-            right: 4rem;
-            transform: translateX(0);
-            left: auto;
-        }
-    }
-}
-
-
-@include respond-to($breakpoint-large-tablets) {
-    .introduction {
-        padding: $spacing-64 $spacing-48;
-        gap: $spacing-64;
-
-        &__content {
-            grid-template-columns: 1fr 1fr;
-            row-gap: $spacing-64;
-        }
-
-        &__list {
-            &--item {
-                max-width: 100%;
-            }
-        }
-    }
-}
-
-
-//* HACK  (1266px ~ 1371px) */
-@media (min-width: 79.125em) and (max-width: 85.69em) {
-    .introduction {
-        &__content {
-            grid-template-columns: 1fr 1fr;
-            column-gap: $spacing-64;
-        }
-    }
-}
+/* .introduction { */
+/*     @extend %flexbox-style; */
+/**/
+/*     flex-direction: column; */
+/*     gap: 12rem; */
+/*     padding: 12rem 13.5rem; */
+/**/
+/*     &__content { */
+/*         @extend %grid-container; */
+/**/
+/*         grid-template-columns: 1fr 1fr; */
+/*         column-gap: $spacing-80; */
+/*         position: relative; */
+/*     } */
+/**/
+/*     &__image { */
+/*         max-width: 100%; */
+/*         border-radius: 2rem; */
+/*     } */
+/**/
+/*     &__text { */
+/*         h2 { */
+/*             margin-bottom: 3.4rem; */
+/*         } */
+/**/
+/*         h3 { */
+/*             margin-bottom: 2.4rem; */
+/*         } */
+/*     } */
+/**/
+/*     &__title { */
+/*         @extend %text-preset-2; */
+/**/
+/*         color: $color-neutral-900; */
+/**/
+/*         div { */
+/*             display: inline-block; */
+/*             position: relative; */
+/*             z-index: 1; */
+/**/
+/*             img { */
+/*                 width: 16rem; */
+/*                 height: 6rem; */
+/*                 display: inline; */
+/*                 position: absolute; */
+/*                 top: 0; */
+/*                 left: -1.7rem; */
+/*             } */
+/*         } */
+/*     } */
+/**/
+/*     &__list { */
+/*         @extend %flexbox-style; */
+/**/
+/*         flex-direction: column; */
+/*         align-items: baseline; */
+/*         gap: $spacing-24; */
+/*         list-style: none; */
+/**/
+/*         &--item { */
+/*             @extend %text-preset-5; */
+/**/
+/*             @extend %flexbox-style; */
+/**/
+/*             gap: 1.4rem; */
+/*             color: $color-neutral-700; */
+/*             max-width: 43.1rem; */
+/*         } */
+/*     } */
+/**/
+/*     &__description { */
+/*         @extend %text-preset-5; */
+/**/
+/*         color: $color-neutral-700; */
+/*         max-width: 52rem; */
+/**/
+/*         span { */
+/*             @extend %text-preset-5-semibold; */
+/*         } */
+/*     } */
+/**/
+/*     &__logos { */
+/*         position: absolute; */
+/*         bottom: 2rem; */
+/*         left: 49%; */
+/*         transform: translateX(-24%); */
+/*     } */
+/* } */
+/**/
+/* @include respond-to($breakpoint-small-mobiles) { */
+/*     .introduction { */
+/*         padding: $spacing-64 $spacing-16; */
+/*         gap: $spacing-64; */
+/**/
+/*         &__content { */
+/*             grid-template-columns: 1fr; */
+/*             row-gap: 4rem; */
+/**/
+/*             &:nth-child(1) div { */
+/*                 grid-row: 1 / 2; */
+/*             } */
+/*         } */
+/**/
+/*         &__title { */
+/*             font-size: 3.4rem; */
+/**/
+/*             div { */
+/*                 img { */
+/*                     width: 11rem; */
+/*                     height: auto; */
+/*                 } */
+/*             } */
+/*         } */
+/**/
+/*         &__description { */
+/*             max-width: 34rem; */
+/*         } */
+/**/
+/*         h2, h3 { */
+/*             margin-bottom: $spacing-24; */
+/*         } */
+/**/
+/*         &__image { */
+/*             max-width: 100%; */
+/*         } */
+/**/
+/*         &__list { */
+/*             gap: $spacing-16; */
+/*         } */
+/**/
+/*         &__logos { */
+/*             display: none; */
+/*         } */
+/*     } */
+/* } */
+/**/
+/**/
+/* @include respond-to($breakpoint-large-mobiles) { */
+/*     .introduction { */
+/*         padding: $spacing-32 $spacing-32 $spacing-48; */
+/*         gap: $spacing-48; */
+/**/
+/*         &__content { */
+/*             grid-template-columns: 1fr; */
+/*             row-gap: $spacing-64; */
+/**/
+/*             &:nth-child(1) div { */
+/*                 grid-row: 1 / 2; */
+/*             } */
+/*         } */
+/**/
+/*         &__image { */
+/*             max-width: 100%; */
+/*         } */
+/**/
+/*         &__list { */
+/*             &--item { */
+/*                 max-width: 100%; */
+/*             } */
+/*         } */
+/**/
+/*         &__description { */
+/*             max-width: 100%; */
+/*         } */
+/**/
+/*         &__logos { */
+/*             display: none; */
+/*         } */
+/*     } */
+/* } */
+/**/
+/**/
+/* @include respond-to($breakpoint-tablets) { */
+/*     .introduction { */
+/*         padding: $spacing-80 $spacing-32; */
+/*         gap: $spacing-80; */
+/**/
+/*         &__content { */
+/*             grid-template-columns: 1fr; */
+/*             row-gap: 4rem; */
+/**/
+/*             &:nth-child(1) div { */
+/*                 grid-row: 1 / 2; */
+/*             } */
+/*         } */
+/**/
+/*         &__image { */
+/*             max-width: 100%; */
+/*         } */
+/**/
+/*         &__title { */
+/*             max-width: calc(100vw - 9.6rem); */
+/*         } */
+/**/
+/*         &__list { */
+/*             &--item { */
+/*                 max-width: 100%; */
+/*             } */
+/*         } */
+/**/
+/*         &__description { */
+/*             max-width: 100%; */
+/*         } */
+/**/
+/*         &__logos { */
+/*             position: absolute; */
+/*             bottom: 4rem; */
+/*             right: 4rem; */
+/*             transform: translateX(0); */
+/*             left: auto; */
+/*         } */
+/*     } */
+/* } */
+/**/
+/**/
+/* @include respond-to($breakpoint-large-tablets) { */
+/*     .introduction { */
+/*         padding: $spacing-64 $spacing-48; */
+/*         gap: $spacing-64; */
+/**/
+/*         &__content { */
+/*             grid-template-columns: 1fr 1fr; */
+/*             row-gap: $spacing-64; */
+/*         } */
+/**/
+/*         &__list { */
+/*             &--item { */
+/*                 max-width: 100%; */
+/*             } */
+/*         } */
+/*     } */
+/* } */
+/**/
+/**/
+/* //* HACK  (1266px ~ 1371px) */
+/* @media (min-width: 79.125em) and (max-width: 85.69em) { */
+/*     .introduction { */
+/*         &__content { */
+/*             grid-template-columns: 1fr 1fr; */
+/*             column-gap: $spacing-64; */
+/*         } */
+/*     } */
+/* } */

@@ -54,3 +54,16 @@
   );
   cursor: pointer;
 }
+
+%grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+%flexbox-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,176 +1,177 @@
-.pricing {
-    max-width: 97rem;
-    margin: 0 auto 12rem;
-
-    @extend %flexbox-style;
-
-    flex-direction: column;
-    gap: $spacing-64;
-
-    &__header {
-        @extend %text-preset-2;
-
-        color: $color-neutral-900;
-    }
-
-    &__options {
-        @extend %grid-container;
-
-        grid-template-columns: 28.6rem 35rem 28.6rem;
-        column-gap: $spacing-24;
-    }
-
-    &__option {
-        @extend %flexbox-style;
-
-        flex-direction: column;
-        align-items: baseline;
-        box-shadow: inset 0 0 0 1px $color-neutral-200;
-        border-radius: $border-radius-8;
-        gap: 2.4rem;
-        position: relative;
-        overflow: hidden;
-        z-index: 10;
-
-        &:nth-child(2) {
-            background-color: $color-neutral-100;
-            z-index: 1;
-
-            &::after {
-                @include blur-effect(49%, -105%);
-            }
-        }
-
-        &--starter, &--enterprise {
-            padding: $spacing-24;
-        }
-
-        &--pro {
-            padding: 4rem $spacing-24;
-        }
-
-        &--title {
-            @extend %text-preset-4;
-
-            color: $color-neutral-900;
-        }
-
-        &--price {
-            @extend %text-preset-3;
-
-            color: $color-neutral-900;
-
-            span {
-                @extend %text-preset-5;
-
-                color: $color-neutral-700;
-            }
-        }
-
-        hr {
-            width: 100%;
-            border: 1px solid $color-neutral-200;
-        }
-
-        &--list {
-            @extend %flexbox-style;
-
-            flex-direction: column;
-            align-items: baseline;
-            gap: $spacing-16;
-            margin-bottom: .8rem;
-            list-style: none;
-
-            &-item {
-                @extend %text-preset-5;
-
-                @extend %flexbox-style;
-
-                gap: $spacing-12;
-                color: $color-neutral-700;
-            }
-        }
-
-        &--btn {
-            width: 100%;
-        }
-    }
-}
-
-@include respond-to($breakpoint-small-mobiles) {
-    .pricing {
-        margin: 0 auto $spacing-64;
-        padding: 0 $spacing-16;
-        gap: $spacing-24;
-        align-items: stretch;
-
-        &__options {
-            grid-template-columns: 1fr;
-            row-gap: $spacing-24;
-        }
-
-        &__option {
-            &--pro {
-                padding: $spacing-24;
-            }
-        }
-
-        &__header {
-            font-size: 3.4rem;
-        }
-    }
-}
-
-
-@include respond-to($breakpoint-large-mobiles) {
-    .pricing {
-        margin: 0 auto $spacing-64;
-        padding: 0 $spacing-24;
-        gap: 4rem;
-        align-items: stretch;
-
-        &__header {
-            text-align: center;
-        }
-
-        &__options {
-            grid-template-columns: 0.75fr;
-            gap: $spacing-24;
-            justify-content: center;
-        }
-
-        &__option {
-            &--pro {
-                padding: $spacing-24;
-            }
-        }
-    }
-}
-
-
-@include respond-to($breakpoint-tablets) {
-    .pricing {
-        margin: 0 auto $spacing-80;
-        padding: 0 $spacing-32;
-        gap: 4rem;
-        align-items: stretch;
-
-        &__options {
-            grid-template-columns: repeat(2, 1fr);
-            gap: $spacing-24;
-            justify-content: center;
-        }
-
-        &__option {
-            &--starter, &--pro, &--enterprise {
-                padding: $spacing-24;
-            }
-
-            &:nth-child(2) {
-                &::after {
-                    @include blur-effect(57%, -107%);
-                }
-            }
-        }
-    }
-}
+/* .pricing { */
+/*   max-width: 97rem; */
+/*   margin: 0 auto 12rem; */
+/**/
+/*   @extend %flexbox-style; */
+/**/
+/*   flex-direction: column; */
+/*   gap: $spacing-64; */
+/**/
+/*   &__header { */
+/*     @extend %text-preset-2; */
+/**/
+/*     color: $color-neutral-900; */
+/*   } */
+/**/
+/*   &__options { */
+/*     @extend %grid-container; */
+/**/
+/*     grid-template-columns: 28.6rem 35rem 28.6rem; */
+/*     column-gap: $spacing-24; */
+/*   } */
+/**/
+/*   &__option { */
+/*     @extend %flexbox-style; */
+/**/
+/*     flex-direction: column; */
+/*     align-items: baseline; */
+/*     box-shadow: inset 0 0 0 1px $color-neutral-200; */
+/*     border-radius: $border-radius-8; */
+/*     gap: 2.4rem; */
+/*     position: relative; */
+/*     overflow: hidden; */
+/*     z-index: 10; */
+/**/
+/*     &:nth-child(2) { */
+/*       background-color: $color-neutral-100; */
+/*       z-index: 1; */
+/**/
+/*       &::after { */
+/*         @include blur-effect(49%, -105%); */
+/*       } */
+/*     } */
+/**/
+/*     &--starter, */
+/*     &--enterprise { */
+/*       padding: $spacing-24; */
+/*     } */
+/**/
+/*     &--pro { */
+/*       padding: 4rem $spacing-24; */
+/*     } */
+/**/
+/*     &--title { */
+/*       @extend %text-preset-4; */
+/**/
+/*       color: $color-neutral-900; */
+/*     } */
+/**/
+/*     &--price { */
+/*       @extend %text-preset-3; */
+/**/
+/*       color: $color-neutral-900; */
+/**/
+/*       span { */
+/*         @extend %text-preset-5; */
+/**/
+/*         color: $color-neutral-700; */
+/*       } */
+/*     } */
+/**/
+/*     hr { */
+/*       width: 100%; */
+/*       border: 1px solid $color-neutral-200; */
+/*     } */
+/**/
+/*     &--list { */
+/*       @extend %flexbox-style; */
+/**/
+/*       flex-direction: column; */
+/*       align-items: baseline; */
+/*       gap: $spacing-16; */
+/*       margin-bottom: 0.8rem; */
+/*       list-style: none; */
+/**/
+/*       &-item { */
+/*         @extend %text-preset-5; */
+/**/
+/*         @extend %flexbox-style; */
+/**/
+/*         gap: $spacing-12; */
+/*         color: $color-neutral-700; */
+/*       } */
+/*     } */
+/**/
+/*     &--btn { */
+/*       width: 100%; */
+/*     } */
+/*   } */
+/* } */
+/**/
+/* @include respond-to($breakpoint-small-mobiles) { */
+/*   .pricing { */
+/*     margin: 0 auto $spacing-64; */
+/*     padding: 0 $spacing-16; */
+/*     gap: $spacing-24; */
+/*     align-items: stretch; */
+/**/
+/*     &__options { */
+/*       grid-template-columns: 1fr; */
+/*       row-gap: $spacing-24; */
+/*     } */
+/**/
+/*     &__option { */
+/*       &--pro { */
+/*         padding: $spacing-24; */
+/*       } */
+/*     } */
+/**/
+/*     &__header { */
+/*       font-size: 3.4rem; */
+/*     } */
+/*   } */
+/* } */
+/**/
+/* @include respond-to($breakpoint-large-mobiles) { */
+/*   .pricing { */
+/*     margin: 0 auto $spacing-64; */
+/*     padding: 0 $spacing-24; */
+/*     gap: 4rem; */
+/*     align-items: stretch; */
+/**/
+/*     &__header { */
+/*       text-align: center; */
+/*     } */
+/**/
+/*     &__options { */
+/*       grid-template-columns: 0.75fr; */
+/*       gap: $spacing-24; */
+/*       justify-content: center; */
+/*     } */
+/**/
+/*     &__option { */
+/*       &--pro { */
+/*         padding: $spacing-24; */
+/*       } */
+/*     } */
+/*   } */
+/* } */
+/**/
+/* @include respond-to($breakpoint-tablets) { */
+/*   .pricing { */
+/*     margin: 0 auto $spacing-80; */
+/*     padding: 0 $spacing-32; */
+/*     gap: 4rem; */
+/*     align-items: stretch; */
+/**/
+/*     &__options { */
+/*       grid-template-columns: repeat(2, 1fr); */
+/*       gap: $spacing-24; */
+/*       justify-content: center; */
+/*     } */
+/**/
+/*     &__option { */
+/*       &--starter, */
+/*       &--pro, */
+/*       &--enterprise { */
+/*         padding: $spacing-24; */
+/*       } */
+/**/
+/*       &:nth-child(2) { */
+/*         &::after { */
+/*           @include blur-effect(57%, -107%); */
+/*         } */
+/*       } */
+/*     } */
+/*   } */
+/* } */
