@@ -1,23 +1,23 @@
 .primary {
-    @extend %primary-button-style;
+  @extend %primary-button-style;
 
-    &:hover {
-        @extend %primary-button-style-hover;
-    }
+  &:hover {
+    @extend %primary-button-style-hover;
+  }
 
-    &:focus, &:focus-visible, &:focus-within {
-        @extend %primary-button-style-focus;
-    }
+  &:focus {
+    @extend %primary-button-style-focus;
+  }
 }
 
 .alternate {
-    @extend %alternate-button-style;
+  @extend %alternate-button-style;
 
-    &:focus, &:focus-visible, &:focus-within {
-        @extend %alternate-button-style-focus;
-    }
+  &:focus {
+    @extend %alternate-button-style-focus;
+  }
 
-    &:hover {
-        @extend %alternate-button-style-hover;
-    }
+  &:hover {
+    @extend %alternate-button-style-hover;
+  }
 }

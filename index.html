@@ -34,17 +34,18 @@
           </nav>
         </header>
         <div class="hero__content">
-          <div class="hero__content-info">
-            <h1 class="hero__content-title">
-              Join the ultimate tech book club
+          <div class="content content__info">
+            <h1 class="content__title">
+              Join the <br />
+              ultimate tech book club
             </h1>
-            <p class="hero__content-description">
+            <p class="content__description">
               Turn your reading time into learning time with fellow tech
               enthusiasts. Get curated recommendations, join vibrant
               discussions, and level up your skills one chapter at a time.
             </p>
             <button
-              class="hero__content-btn primary"
+              class="content__btn primary"
               type="button"
               aria-label="Review membership options"
             >
@@ -55,13 +56,13 @@
                 aria-hidden="true"
               />
             </button>
-            <div class="hero__content-reviews">
+            <div class="content__reviews">
               <img
-                class="hero__content-avatars"
+                class="content__avatars"
                 src="./assets/images/image-avatars.webp"
                 alt="Avatars of tech book club members"
               />
-              <div class="hero__content-rating">
+              <div class="content__rating">
                 <img src="./assets/images/icon-star.svg" alt="Star rating" />
                 <img src="./assets/images/icon-star.svg" alt="Star rating" />
                 <img src="./assets/images/icon-star.svg" alt="Star rating" />
@@ -71,239 +72,246 @@
               </div>
             </div>
           </div>
-          <figure>
-            <img
-              class="hero__content-image"
-              src="./assets/images/image-hero-desktop.webp"
-              alt="A group of people reading books"
+          <picture class="content__image">
+            <source
+              srcset="./assets/desktop/Hero Image.png"
+              media="(min-width: 64em)"
             />
-          </figure>
+            <source
+              srcset="./assets/tablet/Hero Image.png"
+              media="(min-width: 48em)"
+            />
+            <img
+              src="./assets/mobile/Hero Image.jpg"
+              alt="A group of people discussing over a book"
+            />
+          </picture>
         </div>
       </section>
 
-      <section class="introduction">
-        <article class="introduction__content">
-          <figure>
-            <img
-              class="introduction__image"
-              src="./assets/images/image-read-together-desktop.webp"
-              alt=""
-            />
-          </figure>
-          <div class="introduction__text">
-            <h2 class="introduction__title">Read together, grow together</h2>
-            <ul class="introduction__list">
-              <li class="introduction__list--item">
-                <img src="./assets/images/icon-check.svg" alt="" />
-                Monthly curated tech reads selected by industry experts
-              </li>
-              <li class="introduction__list--item">
-                <img src="./assets/images/icon-check.svg" alt="" />
-                Virtual and in-person meetups for deep-dive discussions
-              </li>
-              <li class="introduction__list--item">
-                <img src="./assets/images/icon-check.svg" alt="" />
-                Early access to new tech book releases
-              </li>
-              <li class="introduction__list--item">
-                <img src="./assets/images/icon-check.svg" alt="" />
-                Author Q&A sessions with tech thought leaders
-              </li>
-            </ul>
-          </div>
-        </article>
+      <!-- <section class="introduction"> -->
+      <!--   <article class="introduction__content"> -->
+      <!--     <figure> -->
+      <!--       <img -->
+      <!--         class="introduction__image" -->
+      <!--         src="./assets/images/image-read-together-desktop.webp" -->
+      <!--         alt="" -->
+      <!--       /> -->
+      <!--     </figure> -->
+      <!--     <div class="introduction__text"> -->
+      <!--       <h2 class="introduction__title">Read together, grow together</h2> -->
+      <!--       <ul class="introduction__list"> -->
+      <!--         <li class="introduction__list--item"> -->
+      <!--           <img src="./assets/images/icon-check.svg" alt="" /> -->
+      <!--           Monthly curated tech reads selected by industry experts -->
+      <!--         </li> -->
+      <!--         <li class="introduction__list--item"> -->
+      <!--           <img src="./assets/images/icon-check.svg" alt="" /> -->
+      <!--           Virtual and in-person meetups for deep-dive discussions -->
+      <!--         </li> -->
+      <!--         <li class="introduction__list--item"> -->
+      <!--           <img src="./assets/images/icon-check.svg" alt="" /> -->
+      <!--           Early access to new tech book releases -->
+      <!--         </li> -->
+      <!--         <li class="introduction__list--item"> -->
+      <!--           <img src="./assets/images/icon-check.svg" alt="" /> -->
+      <!--           Author Q&A sessions with tech thought leaders -->
+      <!--         </li> -->
+      <!--       </ul> -->
+      <!--     </div> -->
+      <!--   </article> -->
+      <!---->
+      <!--   <article class="introduction__content"> -->
+      <!--     <div class="introduction__text"> -->
+      <!--       <h3 class="introduction__title"> -->
+      <!--         Not your average book -->
+      <!--         <div> -->
+      <!--           <img src="./assets/images/pattern-circle.png" alt="" />club -->
+      <!--         </div> -->
+      <!--       </h3> -->
+      <!--       <p class="introduction__description"> -->
+      <!--         Connect with a community that speaks your language - from -->
+      <!--         <span>Python</span> -->
+      <!--         to <span>TypeScript</span> and everything in between. Our -->
+      <!--         discussions blend technical depth with practical applications. -->
+      <!--       </p> -->
+      <!--       <img -->
+      <!--         class="introduction__logos" -->
+      <!--         src="./assets/images/logos-tech.svg" -->
+      <!--         alt="" -->
+      <!--       /> -->
+      <!--     </div> -->
+      <!--     <figure> -->
+      <!--       <img -->
+      <!--         class="introduction__image" -->
+      <!--         src="./assets/images/image-not-average-desktop.webp" -->
+      <!--         alt="" -->
+      <!--       /> -->
+      <!--     </figure> -->
+      <!--   </article> -->
+      <!-- </section> -->
 
-        <article class="introduction__content">
-          <div class="introduction__text">
-            <h3 class="introduction__title">
-              Not your average book
-              <div>
-                <img src="./assets/images/pattern-circle.png" alt="" />club
-              </div>
-            </h3>
-            <p class="introduction__description">
-              Connect with a community that speaks your language - from
-              <span>Python</span>
-              to <span>TypeScript</span> and everything in between. Our
-              discussions blend technical depth with practical applications.
-            </p>
-            <img
-              class="introduction__logos"
-              src="./assets/images/logos-tech.svg"
-              alt=""
-            />
-          </div>
-          <figure>
-            <img
-              class="introduction__image"
-              src="./assets/images/image-not-average-desktop.webp"
-              alt=""
-            />
-          </figure>
-        </article>
-      </section>
+      <!-- <section class="journey"> -->
+      <!--   <header> -->
+      <!--     <h2 class="journey__title">Your tech reading journey</h2> -->
+      <!--   </header> -->
+      <!--   <div class="journey__steps"> -->
+      <!--     <div class="journey__step"> -->
+      <!--       <div class="journey__step--number"> -->
+      <!--         <span>1</span> -->
+      <!--         <img src="./assets/images/pattern-arrow.svg" alt="" /> -->
+      <!--       </div> -->
+      <!--       <p>Choose your membership tier</p> -->
+      <!--     </div> -->
+      <!--     <div class="journey__step"> -->
+      <!--       <div class="journey__step--number"> -->
+      <!--         <span>2</span> -->
+      <!--         <img src="./assets/images/pattern-arrow.svg" alt="" /> -->
+      <!--       </div> -->
+      <!--       <p>Get your monthly book selection</p> -->
+      <!--     </div> -->
+      <!--     <div class="journey__step"> -->
+      <!--       <div class="journey__step--number"> -->
+      <!--         <span>3</span> -->
+      <!--         <img src="./assets/images/pattern-arrow.svg" alt="" /> -->
+      <!--       </div> -->
+      <!--       <p>Join our discussions forums</p> -->
+      <!--     </div> -->
+      <!--     <div class="journey__step"> -->
+      <!--       <div class="journey__step--number"> -->
+      <!--         <span>4</span> -->
+      <!--       </div> -->
+      <!--       <p>Attend exclusive meetups</p> -->
+      <!--     </div> -->
+      <!--   </div> -->
+      <!-- </section> -->
 
-      <section class="journey">
-        <header>
-          <h2 class="journey__title">Your tech reading journey</h2>
-        </header>
-        <div class="journey__steps">
-          <div class="journey__step">
-            <div class="journey__step--number">
-              <span>1</span>
-              <img src="./assets/images/pattern-arrow.svg" alt="" />
-            </div>
-            <p>Choose your membership tier</p>
-          </div>
-          <div class="journey__step">
-            <div class="journey__step--number">
-              <span>2</span>
-              <img src="./assets/images/pattern-arrow.svg" alt="" />
-            </div>
-            <p>Get your monthly book selection</p>
-          </div>
-          <div class="journey__step">
-            <div class="journey__step--number">
-              <span>3</span>
-              <img src="./assets/images/pattern-arrow.svg" alt="" />
-            </div>
-            <p>Join our discussions forums</p>
-          </div>
-          <div class="journey__step">
-            <div class="journey__step--number">
-              <span>4</span>
-            </div>
-            <p>Attend exclusive meetups</p>
-          </div>
-        </div>
-      </section>
+      <!-- <aside class="pricing"> -->
+      <!--   <header> -->
+      <!--     <h2 class="pricing__header">Membership options</h2> -->
+      <!--   </header> -->
+      <!--   <section class="pricing__options"> -->
+      <!--     <div class="pricing__option pricing__option--starter"> -->
+      <!--       <h3 class="pricing__option--title">Starter</h3> -->
+      <!--       <p class="pricing__option--price">$19<span>/month</span></p> -->
+      <!--       <hr /> -->
+      <!--       <ul class="pricing__option--list"> -->
+      <!--         <li class="pricing__option--list-item"> -->
+      <!--           <img src="./assets/images/icon-check.svg" alt="" /> 1 book/month -->
+      <!--         </li> -->
+      <!--         <li class="pricing__option--list-item"> -->
+      <!--           <img src="./assets/images/icon-check.svg" alt="" /> Online -->
+      <!--           forums -->
+      <!--         </li> -->
+      <!--       </ul> -->
+      <!--       <button class="pricing__option--btn primary" type="button"> -->
+      <!--         Subscribe now -->
+      <!--       </button> -->
+      <!--     </div> -->
+      <!--     <div class="pricing__option pricing__option--pro"> -->
+      <!--       <h3 class="pricing__option--title">Pro</h3> -->
+      <!--       <p class="pricing__option--price">$29<span>/month</span></p> -->
+      <!--       <hr /> -->
+      <!--       <ul class="pricing__option--list"> -->
+      <!--         <li class="pricing__option--list-item"> -->
+      <!--           <img src="./assets/images/icon-check.svg" alt="" /> 2 -->
+      <!--           books/month -->
+      <!--         </li> -->
+      <!--         <li class="pricing__option--list-item"> -->
+      <!--           <img src="./assets/images/icon-check.svg" alt="" /> Virtual -->
+      <!--           meetups -->
+      <!--         </li> -->
+      <!--       </ul> -->
+      <!--       <button class="pricing__option--btn primary" type="button"> -->
+      <!--         Subscribe now -->
+      <!--       </button> -->
+      <!--     </div> -->
+      <!--     <div class="pricing__option pricing__option--enterprise"> -->
+      <!--       <h3 class="pricing__option--title">Enterprise</h3> -->
+      <!--       <p class="pricing__option--price">Custom</p> -->
+      <!--       <hr /> -->
+      <!--       <ul class="pricing__option--list"> -->
+      <!--         <li class="pricing__option--list-item"> -->
+      <!--           <img src="./assets/images/icon-check.svg" alt="" /> Team access -->
+      <!--         </li> -->
+      <!--         <li class="pricing__option--list-item"> -->
+      <!--           <img src="./assets/images/icon-check.svg" alt="" /> Private -->
+      <!--           sessions -->
+      <!--         </li> -->
+      <!--       </ul> -->
+      <!--       <button class="pricing__option--btn primary" type="button"> -->
+      <!--         Talk to us -->
+      <!--       </button> -->
+      <!--     </div> -->
+      <!--   </section> -->
+      <!-- </aside> -->
 
-      <aside class="pricing">
-        <header>
-          <h2 class="pricing__header">Membership options</h2>
-        </header>
-        <section class="pricing__options">
-          <div class="pricing__option pricing__option--starter">
-            <h3 class="pricing__option--title">Starter</h3>
-            <p class="pricing__option--price">$19<span>/month</span></p>
-            <hr />
-            <ul class="pricing__option--list">
-              <li class="pricing__option--list-item">
-                <img src="./assets/images/icon-check.svg" alt="" /> 1 book/month
-              </li>
-              <li class="pricing__option--list-item">
-                <img src="./assets/images/icon-check.svg" alt="" /> Online
-                forums
-              </li>
-            </ul>
-            <button class="pricing__option--btn primary" type="button">
-              Subscribe now
-            </button>
-          </div>
-          <div class="pricing__option pricing__option--pro">
-            <h3 class="pricing__option--title">Pro</h3>
-            <p class="pricing__option--price">$29<span>/month</span></p>
-            <hr />
-            <ul class="pricing__option--list">
-              <li class="pricing__option--list-item">
-                <img src="./assets/images/icon-check.svg" alt="" /> 2
-                books/month
-              </li>
-              <li class="pricing__option--list-item">
-                <img src="./assets/images/icon-check.svg" alt="" /> Virtual
-                meetups
-              </li>
-            </ul>
-            <button class="pricing__option--btn primary" type="button">
-              Subscribe now
-            </button>
-          </div>
-          <div class="pricing__option pricing__option--enterprise">
-            <h3 class="pricing__option--title">Enterprise</h3>
-            <p class="pricing__option--price">Custom</p>
-            <hr />
-            <ul class="pricing__option--list">
-              <li class="pricing__option--list-item">
-                <img src="./assets/images/icon-check.svg" alt="" /> Team access
-              </li>
-              <li class="pricing__option--list-item">
-                <img src="./assets/images/icon-check.svg" alt="" /> Private
-                sessions
-              </li>
-            </ul>
-            <button class="pricing__option--btn primary" type="button">
-              Talk to us
-            </button>
-          </div>
-        </section>
-      </aside>
-
-      <blockquote class="review">
-        <div class="review__stars">
-          <img src="./assets/images/icon-star.svg" alt="Five star image" />
-          <img src="./assets/images/icon-star.svg" alt="Five star image" />
-          <img src="./assets/images/icon-star.svg" alt="Five star image" />
-          <img src="./assets/images/icon-star.svg" alt="Five star image" />
-          <img src="./assets/images/icon-star.svg" alt="Five star image" />
-        </div>
-        <q class="review__description"
-          >This book club transformed my technical reading from a solitary
-          activity into an enriching community experience. The discussions are
-          gold!</q
-        >
-        <p class="review__author">Sarah Chen, Software Architect</p>
-      </blockquote>
+      <!-- <blockquote class="review"> -->
+      <!--   <div class="review__stars"> -->
+      <!--     <img src="./assets/images/icon-star.svg" alt="Five star image" /> -->
+      <!--     <img src="./assets/images/icon-star.svg" alt="Five star image" /> -->
+      <!--     <img src="./assets/images/icon-star.svg" alt="Five star image" /> -->
+      <!--     <img src="./assets/images/icon-star.svg" alt="Five star image" /> -->
+      <!--     <img src="./assets/images/icon-star.svg" alt="Five star image" /> -->
+      <!--   </div> -->
+      <!--   <q class="review__description" -->
+      <!--     >This book club transformed my technical reading from a solitary -->
+      <!--     activity into an enriching community experience. The discussions are -->
+      <!--     gold!</q -->
+      <!--   > -->
+      <!--   <p class="review__author">Sarah Chen, Software Architect</p> -->
+      <!-- </blockquote> -->
     </main>
 
-    <footer class="footer">
-      <div class="footer__content">
-        <header class="footer__header">
-          <h2 class="footer__title">Ready to debug your reading list?</h2>
-          <button class="footer__btn alternate">
-            Review membership options
-            <img src="./assets/images/icon-arrow-up.svg" alt="" />
-          </button>
-        </header>
-
-        <section class="footer__review">
-          <img
-            class="footer__review-avatar"
-            src="./assets/images/image-avatars.webp"
-            alt="Reviewers avatar"
-          />
-          <div class="footer__review-info">
-            <img
-              src="./assets/images/icon-star.svg"
-              alt="Five star review star image"
-            />
-            <img
-              src="./assets/images/icon-star.svg"
-              alt="Five star review star image"
-            />
-            <img
-              src="./assets/images/icon-star.svg"
-              alt="Five star review star image"
-            />
-            <img
-              src="./assets/images/icon-star.svg"
-              alt="Five star review star image"
-            />
-            <img
-              src="./assets/images/icon-star.svg"
-              alt="Five star review star image"
-            />
-            <p>200+ developers joined already</p>
-          </div>
-        </section>
-      </div>
-      <hr />
-      <section class="footer__copyright">
-        <p class="footer__copyright-author">&copy; 2024 - Tech Book Club</p>
-        <div class="footer__copyright-links">
-          <img src="./assets/images/logo-bluesky.svg" alt="Blue sky logo" />
-          <img src="./assets/images/logo-linkedin.svg" alt="LinkedIn logo" />
-        </div>
-      </section>
-    </footer>
+    <!-- <footer class="footer"> -->
+    <!--   <div class="footer__content"> -->
+    <!--     <header class="footer__header"> -->
+    <!--       <h2 class="footer__title">Ready to debug your reading list?</h2> -->
+    <!--       <button class="footer__btn alternate"> -->
+    <!--         Review membership options -->
+    <!--         <img src="./assets/images/icon-arrow-up.svg" alt="" /> -->
+    <!--       </button> -->
+    <!--     </header> -->
+    <!---->
+    <!--     <section class="footer__review"> -->
+    <!--       <img -->
+    <!--         class="footer__review-avatar" -->
+    <!--         src="./assets/images/image-avatars.webp" -->
+    <!--         alt="Reviewers avatar" -->
+    <!--       /> -->
+    <!--       <div class="footer__review-info"> -->
+    <!--         <img -->
+    <!--           src="./assets/images/icon-star.svg" -->
+    <!--           alt="Five star review star image" -->
+    <!--         /> -->
+    <!--         <img -->
+    <!--           src="./assets/images/icon-star.svg" -->
+    <!--           alt="Five star review star image" -->
+    <!--         /> -->
+    <!--         <img -->
+    <!--           src="./assets/images/icon-star.svg" -->
+    <!--           alt="Five star review star image" -->
+    <!--         /> -->
+    <!--         <img -->
+    <!--           src="./assets/images/icon-star.svg" -->
+    <!--           alt="Five star review star image" -->
+    <!--         /> -->
+    <!--         <img -->
+    <!--           src="./assets/images/icon-star.svg" -->
+    <!--           alt="Five star review star image" -->
+    <!--         /> -->
+    <!--         <p>200+ developers joined already</p> -->
+    <!--       </div> -->
+    <!--     </section> -->
+    <!--   </div> -->
+    <!--   <hr /> -->
+    <!--   <section class="footer__copyright"> -->
+    <!--     <p class="footer__copyright-author">&copy; 2024 - Tech Book Club</p> -->
+    <!--     <div class="footer__copyright-links"> -->
+    <!--       <img src="./assets/images/logo-bluesky.svg" alt="Blue sky logo" /> -->
+    <!--       <img src="./assets/images/logo-linkedin.svg" alt="LinkedIn logo" /> -->
+    <!--     </div> -->
+    <!--   </section> -->
+    <!-- </footer> -->
   </body>
 </html>

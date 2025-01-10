@@ -1,181 +1,120 @@
 .hero {
-    background-image: url("../starter-code/assets/images/pattern-light-bg.svg");
-    background-color: $color-neutral-100;
-    width: 100%;
-    height: auto;
-    padding: $spacing-32 13.5rem $spacing-80;
-    position: relative;
-    overflow: hidden;
-    z-index: 10;
+  padding: $spacing-24 $spacing-16 $spacing-80;
+  margin-bottom: $spacing-64;
+  background-color: $color-neutral-100;
+  background-image: url("../../assets/images/pattern-light-bg.svg");
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
 
-    @extend %flexbox-style;
+  &__header {
+    margin-bottom: $spacing-48;
+  }
 
-    flex-direction: column;
-    align-items: flex-start;
-    gap: $spacing-80;
+  &__content {
+    @extend %grid-container;
+    row-gap: $spacing-64;
+  }
 
-    &::after {
-        @include blur-effect(50%, -30%);
+  .content {
+    &__title {
+      @extend %text-preset-1-mobile;
+      background: $color-gradient-text-gradient;
+
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: $spacing-24;
     }
 
-    &__content {
-        @extend %grid-container;
-
-        grid-template-columns: 1fr 54rem;
-        column-gap: $spacing-64;
-
-        &-title {
-            @extend %text-preset-1;
-
-            background: $color-gradient-text-gradient;
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: $spacing-24;
-        }
-
-        &-description {
-            @extend %text-preset-5;
-
-            color: $color-neutral-700;
-            margin-bottom: $spacing-32;
-        }
-
-        &-btn {
-            margin-bottom: $spacing-20;
-        }
-
-        &-reviews {
-            @extend %flexbox-style;
-
-            justify-content: start;
-            align-items: center;
-            gap: $spacing-12;
-        }
-
-        &-avatars {
-            max-width: 11rem;
-        }
-
-        &-rating {
-            img {
-                width: 2.4rem;
-                height: 2.4rem;
-                margin-bottom: $spacing-4;
-            }
-
-            p {
-                @extend %text-preset-7;
-
-                color: $color-neutral-700;
-            }
-        }
-
-        &-image {
-            width: 100%;
-            height: 100%;
-            border-radius: $border-radius-10;
-        }
+    &__description {
+      @extend %text-preset-5;
+      margin-bottom: $spacing-32;
     }
-}
 
-@include respond-to($breakpoint-small-mobiles) {
-    .hero {
-        padding: $spacing-24 $spacing-16 $spacing-80;
-        gap: $spacing-48;
-
-        &::after {
-            @include blur-effect(100%, 100%);
-        }
-
-        &__content {
-            grid-template-columns: 1fr;
-            row-gap: $spacing-64;
-
-            &-title {
-                font-size: 3.8rem;
-            }
-
-            &-description {
-                letter-spacing: -0.2px;
-            }
-
-            &-btn {
-                font-size: calc(1.2rem + .2vw);
-            }
-        }
+    &__btn {
+      @extend %text-preset-6-mobile;
+      gap: $spacing-16;
+      margin-bottom: $spacing-20;
+      font-size: 1.4rem;
     }
-}
 
-
-@include respond-to($breakpoint-large-mobiles) {
-    .hero {
-        padding: $spacing-32 $spacing-32 $spacing-48;
-        gap: $spacing-48;
-
-        &::after {
-            @include blur-effect(76%, -50%);
-        }
-
-        &__content {
-            grid-template-columns: 1fr;
-            row-gap: $spacing-64;
-        }
+    &__reviews {
+      @extend %flexbox-style;
+      justify-content: flex-start;
+      gap: $spacing-12;
     }
-}
 
-
-@media (min-width: 48em) and (max-width: 79.063em) {
-    .hero {
-        gap: $spacing-64;
-
-        &__content {
-            &-title {
-                letter-spacing: -1px;
-            }
-
-            &-description {
-                letter-spacing: -0.2px;
-            }
-        }
+    &__avatars {
+      max-width: 11rem;
+      height: auto;
     }
+
+    &__rating {
+      img {
+        margin-bottom: $spacing-4;
+      }
+      p {
+        @extend %text-preset-7;
+      }
+    }
+
+    &__image {
+      display: block;
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: $border-radius-12;
+      }
+    }
+  }
 }
 
 @include respond-to($breakpoint-tablets) {
-    .hero {
-        padding: $spacing-32 $spacing-32 $spacing-80;
+  .hero {
+    padding: $spacing-32 $spacing-32 $spacing-80;
+    margin-bottom: $spacing-80;
 
-        &::after {
-            @include blur-effect(73%, -50%);
-        }
-
-        &__content {
-            grid-template-columns: 1fr;
-            row-gap: $spacing-64;
-        }
+    &__header {
+      margin-bottom: $spacing-64;
     }
+
+    &::after {
+      @include blur-effect(75%, -47%);
+    }
+
+    .content {
+      &__title {
+        font-size: 6.2rem;
+      }
+
+      &__description {
+        letter-spacing: 0;
+      }
+
+      &__btn {
+        font-size: 1.6rem;
+      }
+    }
+  }
 }
 
+@include respond-to($breakpoint-desktops) {
+  .hero {
+    padding: $spacing-32 13.5rem $spacing-80;
 
-@include respond-to($breakpoint-large-tablets) {
-    .hero {
-        &__content {
-            grid-template-columns: repeat(2, 1fr);
-            align-items: stretch;
-
-            &-info {
-                align-self: center;
-            }
-
-            &-title {
-                font-size: 5.4rem;
-            }
-        }
-
-        padding: $spacing-64 $spacing-48;
-
-        &::after {
-            @include blur-effect(50%, -30%);
-        }
+    &__header {
+      margin-bottom: $spacing-80;
     }
+
+    &::after {
+      @include blur-effect(45%, -32.5%);
+    }
+
+    &__content {
+      grid-template-columns: 1fr 54rem;
+      column-gap: $spacing-64;
+      align-items: center;
+    }
+  }
 }
