@@ -6,13 +6,16 @@
   margin-bottom: $spacing-64;
   background-color: $color-neutral-100;
   background-image: url("../../assets/images/pattern-light-bg.svg");
-
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
   .content {
     &__title {
       @extend %text-preset-1-mobile;
       background: $color-gradient-text-gradient;
-      background-clip: text;
+
       -webkit-background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
       margin-bottom: $spacing-24;
     }
@@ -54,6 +57,29 @@
       img {
         width: 100%;
         height: auto;
+        border-radius: $border-radius-12;
+      }
+    }
+  }
+}
+
+@include respond-to($breakpoint-tablets) {
+  .hero {
+    padding: $spacing-32 $spacing-32 $spacing-80;
+    row-gap: $spacing-64;
+    margin-bottom: $spacing-80;
+
+    &::after {
+      @include blur-effect(75%, -47%);
+    }
+
+    .content {
+      &__title {
+        font-size: 6.2rem;
+      }
+
+      &__description {
+        letter-spacing: 0;
       }
     }
   }
