@@ -1,3 +1,75 @@
+.pricing {
+  padding: 0 $spacing-16;
+  margin-bottom: $spacing-64;
+  color: $color-neutral-900;
+
+  &,
+  &__option,
+  &__option--list-item {
+    @extend %flexbox-style;
+    flex-direction: column;
+    gap: $spacing-24;
+    align-items: unset;
+  }
+
+  &__header {
+    @extend %text-preset-2-mobile;
+  }
+
+  &__options {
+    @extend %grid-container;
+    grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr));
+    row-gap: $spacing-24;
+  }
+
+  &__option {
+    padding: $spacing-24;
+    box-shadow: inset 0 0 0 1px $color-neutral-200;
+    border-radius: $border-radius-8;
+
+    &--pro {
+      background-color: $color-neutral-100;
+      background-image: url("../../assets/images/pattern-glow.svg");
+      width: 100%;
+      height: 100%;
+    }
+
+    &--title {
+      @extend %text-preset-4;
+    }
+
+    &--price {
+      @extend %text-preset-3;
+
+      span {
+        @extend %text-preset-5;
+        color: $color-neutral-700;
+        margin-left: 0.8rem;
+      }
+    }
+
+    &--list {
+      list-style: none;
+
+      &-item {
+        &:first-of-type {
+          margin-bottom: $spacing-16;
+        }
+
+        @extend %text-preset-5;
+        color: $color-neutral-700;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: $spacing-12;
+      }
+    }
+  }
+  hr {
+    width: 100%;
+    border: 1px solid $color-neutral-200;
+  }
+}
+
 /* .pricing { */
 /*   max-width: 97rem; */
 /*   margin: 0 auto 12rem; */
@@ -148,7 +220,7 @@
 /* } */
 /**/
 /* @include respond-to($breakpoint-tablets) { */
-/*   .pricing { */
+/*   .pricing{ */
 /*     margin: 0 auto $spacing-80; */
 /*     padding: 0 $spacing-32; */
 /*     gap: 4rem; */
