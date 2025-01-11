@@ -417,8 +417,23 @@ body {
     .pricing__header {
       font-size: 5rem; }
     .pricing__options {
-      grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr));
-      gap: 2.4rem; } }
+      grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr)); } }
+@media (min-width: 75em) {
+  .pricing {
+    gap: 6.4rem;
+    margin-bottom: 12rem; }
+    .pricing__header {
+      text-align: center; }
+    .pricing__options {
+      grid-template-columns: 28.6rem 35rem 28.6rem;
+      grid-template-rows: 39rem;
+      align-items: center;
+      max-width: 97rem;
+      margin: 0 auto; }
+    .pricing__option--starter, .pricing__option--enterprise {
+      height: auto; }
+    .pricing__option--pro {
+      height: 100%; } }
 /* .pricing { */
 /*   max-width: 97rem; */
 /*   margin: 0 auto 12rem; */
