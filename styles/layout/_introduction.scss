@@ -15,6 +15,10 @@
   &__content {
     @extend %grid-container;
     row-gap: $spacing-40;
+
+    &:nth-of-type(2) {
+      position: relative;
+    }
   }
 
   &__text {
@@ -44,11 +48,10 @@
 
       img {
         max-width: 11rem;
-        min-height: auto;
-        display: inline;
+        height: auto;
         position: absolute;
         top: 0;
-        left: -1.7rem;
+        left: -1rem;
       }
     }
   }
@@ -71,7 +74,81 @@
     img {
       width: 100%;
       height: auto;
-      border-radius: $border-radius-12;
+      border-radius: $border-radius-20;
+    }
+  }
+}
+
+@include respond-to($breakpoint-tablets) {
+  .introduction {
+    gap: $spacing-80;
+    margin-bottom: $spacing-80;
+    padding: 0 $spacing-32;
+
+    &__content {
+      &:first-of-type {
+        .introduction__text {
+          gap: 0;
+        }
+
+        .introduction__title {
+          margin-bottom: 3.4rem;
+        }
+      }
+    }
+
+    &__logos {
+      display: block;
+      position: absolute;
+      bottom: 5rem;
+      right: 5rem;
+      width: 12rem;
+      height: 13.8rem;
+      z-index: 1;
+    }
+
+    &__title {
+      font-size: 5rem;
+      text-wrap: balance;
+
+      div {
+        img {
+          max-width: 16rem;
+        }
+      }
+    }
+
+    &__list {
+      gap: $spacing-24;
+    }
+  }
+}
+
+@include respond-to($breakpoint-desktops) {
+  .introduction {
+    gap: 12rem;
+    margin-bottom: 12rem;
+    padding: 0 13.5rem;
+
+    &__content {
+      grid-template-columns: 1fr 1fr;
+      column-gap: $spacing-80;
+
+      &:first-of-type {
+        .introduction__image {
+          grid-row: 1;
+          grid-column: 1 / 2;
+        }
+      }
+    }
+    &__image {
+      width: 56rem;
+    }
+
+    &__logos {
+      left: 50%;
+      transform: translateX(-45%);
+      bottom: 3.1rem;
     }
   }
 }

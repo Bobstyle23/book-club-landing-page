@@ -102,6 +102,7 @@
 @include respond-to($breakpoint-desktops) {
   .hero {
     padding: $spacing-32 13.5rem $spacing-80;
+    margin-bottom: 12rem;
 
     &__header {
       margin-bottom: $spacing-80;

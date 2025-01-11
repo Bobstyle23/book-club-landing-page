@@ -171,7 +171,8 @@ body {
       font-size: 1.6rem; } }
 @media (min-width: 75em) {
   .hero {
-    padding: 3.2rem 13.5rem 8rem; }
+    padding: 3.2rem 13.5rem 8rem;
+    margin-bottom: 12rem; }
     .hero__header {
       margin-bottom: 8rem; }
     .hero::after {
@@ -199,6 +200,8 @@ body {
     align-items: baseline; }
   .introduction__content {
     row-gap: 4rem; }
+    .introduction__content:nth-of-type(2) {
+      position: relative; }
   .introduction__text {
     gap: 2.4rem; }
   .introduction__list {
@@ -216,21 +219,62 @@ body {
       z-index: 1; }
       .introduction__title div img {
         max-width: 11rem;
-        min-height: auto;
-        display: inline;
+        height: auto;
         position: absolute;
         top: 0;
-        left: -1.7rem; }
+        left: -1rem; }
   .introduction__logos {
     display: none; }
   .introduction__description {
     color: #385159; }
-  .introduction__image img {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 1.2rem; }
+  .introduction__image {
+    display: block; }
+    .introduction__image img {
+      width: 100%;
+      height: auto;
+      border-radius: 2rem; }
 
+@media (min-width: 48em) {
+  .introduction {
+    gap: 8rem;
+    margin-bottom: 8rem;
+    padding: 0 3.2rem; }
+    .introduction__content:first-of-type .introduction__text {
+      gap: 0; }
+    .introduction__content:first-of-type .introduction__title {
+      margin-bottom: 3.4rem; }
+    .introduction__logos {
+      display: block;
+      position: absolute;
+      bottom: 5rem;
+      right: 5rem;
+      width: 12rem;
+      height: 13.8rem;
+      z-index: 1; }
+    .introduction__title {
+      font-size: 5rem;
+      text-wrap: balance; }
+      .introduction__title div img {
+        max-width: 16rem; }
+    .introduction__list {
+      gap: 2.4rem; } }
+@media (min-width: 75em) {
+  .introduction {
+    gap: 12rem;
+    margin-bottom: 12rem;
+    padding: 0 13.5rem; }
+    .introduction__content {
+      grid-template-columns: 1fr 1fr;
+      column-gap: 8rem; }
+      .introduction__content:first-of-type .introduction__image {
+        grid-row: 1;
+        grid-column: 1 / 2; }
+    .introduction__image {
+      width: 56rem; }
+    .introduction__logos {
+      left: 50%;
+      transform: translateX(-45%);
+      bottom: 3.1rem; } }
 /* .introduction { */
 /*     @extend %flexbox-style; */
 /**/
