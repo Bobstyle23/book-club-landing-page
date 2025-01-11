@@ -18,8 +18,7 @@
 
   &__options {
     @extend %grid-container;
-    grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr));
-    row-gap: $spacing-24;
+    gap: $spacing-24;
   }
 
   &__option {
@@ -67,6 +66,22 @@
   hr {
     width: 100%;
     border: 1px solid $color-neutral-200;
+  }
+}
+
+@include respond-to($breakpoint-tablets) {
+  .pricing {
+    padding: 0 $spacing-32;
+    margin-bottom: $spacing-80;
+    gap: $spacing-40;
+
+    &__header {
+      font-size: 5rem;
+    }
+
+    &__options {
+      grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr));
+    }
   }
 }
 

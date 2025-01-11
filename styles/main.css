@@ -383,8 +383,7 @@ body {
     gap: 2.4rem;
     align-items: unset; }
   .pricing__options {
-    grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr));
-    row-gap: 2.4rem; }
+    gap: 2.4rem; }
   .pricing__option {
     padding: 2.4rem;
     box-shadow: inset 0 0 0 1px #e6e1df;
@@ -410,6 +409,16 @@ body {
     width: 100%;
     border: 1px solid #e6e1df; }
 
+@media (min-width: 48em) {
+  .pricing {
+    padding: 0 3.2rem;
+    margin-bottom: 8rem;
+    gap: 4rem; }
+    .pricing__header {
+      font-size: 5rem; }
+    .pricing__options {
+      grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr));
+      gap: 2.4rem; } }
 /* .pricing { */
 /*   max-width: 97rem; */
 /*   margin: 0 auto 12rem; */
