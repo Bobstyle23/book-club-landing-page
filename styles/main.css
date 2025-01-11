@@ -443,6 +443,19 @@ body {
   .review__author {
     color: #385159; }
 
+@media (min-width: 48em) {
+  .review {
+    padding: 0 3.2rem; }
+    .review__description {
+      font-size: 3.4rem;
+      line-height: 1.3; } }
+@media (min-width: 75em) {
+  .review {
+    max-width: 97rem;
+    margin: 0 auto 12rem;
+    padding: 0;
+    text-align: center;
+    align-items: center; } }
 /* .review { */
 /*   @extend %flexbox-style; */
 /**/
