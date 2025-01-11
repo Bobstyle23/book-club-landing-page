@@ -12,6 +12,9 @@
   background-image: url("../../assets/images/pattern-light-bg.svg");
   border-radius: $border-radius-12;
   text-align: center;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
 
   &__title {
     @extend %text-preset-2-mobile;
@@ -19,7 +22,7 @@
 
   &__steps {
     @extend %grid-container;
-    row-gap: $spacing-16;
+    row-gap: $spacing-24;
   }
 
   &__step {
@@ -41,6 +44,28 @@
       @extend %text-preset-4;
       font-size: 2rem;
       line-height: 1.4;
+    }
+  }
+}
+
+@include respond-to($breakpoint-tablets) {
+  .journey {
+    margin: 0 $spacing-32 $spacing-80;
+    padding: $spacing-48 $spacing-24;
+    gap: $spacing-40;
+
+    &::after {
+      @include blur-effect(75%, -47%);
+    }
+
+    &__title {
+      font-size: 5rem;
+    }
+
+    &__steps {
+      grid-template-columns: repeat(2, 1fr);
+      gap: $spacing-32;
+      align-items: baseline;
     }
   }
 }
