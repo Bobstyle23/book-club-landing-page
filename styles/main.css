@@ -57,7 +57,7 @@ body {
   line-height: 1;
   color: #062630; }
 
-@media (min-width: 70em) and (max-width: 81.25em) {
+@media (min-width: 70em) and (max-width: 84.375em) {
   html {
     font-size: 56.25%; } }
 .hero .content__title, .introduction__title, .primary, .alternate, .hero .content__btn, .hero .content__rating p {
@@ -269,6 +269,8 @@ body {
       .introduction__content:first-of-type .introduction__image {
         grid-row: 1;
         grid-column: 1 / 2; }
+    .introduction__list {
+      max-width: 43rem; }
     .introduction__image {
       width: 56rem; }
     .introduction__logos {
