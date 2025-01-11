@@ -74,7 +74,7 @@
     img {
       width: 100%;
       height: auto;
-      border-radius: $border-radius-12;
+      border-radius: $border-radius-20;
     }
   }
 }
@@ -120,6 +120,35 @@
 
     &__list {
       gap: $spacing-24;
+    }
+  }
+}
+
+@include respond-to($breakpoint-desktops) {
+  .introduction {
+    gap: 12rem;
+    margin-bottom: 12rem;
+    padding: 0 13.5rem;
+
+    &__content {
+      grid-template-columns: 1fr 1fr;
+      column-gap: $spacing-80;
+
+      &:first-of-type {
+        .introduction__image {
+          grid-row: 1;
+          grid-column: 1 / 2;
+        }
+      }
+    }
+    &__image {
+      width: 56rem;
+    }
+
+    &__logos {
+      left: 50%;
+      transform: translateX(-45%);
+      bottom: 3.1rem;
     }
   }
 }

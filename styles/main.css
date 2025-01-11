@@ -171,7 +171,8 @@ body {
       font-size: 1.6rem; } }
 @media (min-width: 75em) {
   .hero {
-    padding: 3.2rem 13.5rem 8rem; }
+    padding: 3.2rem 13.5rem 8rem;
+    margin-bottom: 12rem; }
     .hero__header {
       margin-bottom: 8rem; }
     .hero::after {
@@ -231,7 +232,7 @@ body {
     .introduction__image img {
       width: 100%;
       height: auto;
-      border-radius: 1.2rem; }
+      border-radius: 2rem; }
 
 @media (min-width: 48em) {
   .introduction {
@@ -257,6 +258,23 @@ body {
         max-width: 16rem; }
     .introduction__list {
       gap: 2.4rem; } }
+@media (min-width: 75em) {
+  .introduction {
+    gap: 12rem;
+    margin-bottom: 12rem;
+    padding: 0 13.5rem; }
+    .introduction__content {
+      grid-template-columns: 1fr 1fr;
+      column-gap: 8rem; }
+      .introduction__content:first-of-type .introduction__image {
+        grid-row: 1;
+        grid-column: 1 / 2; }
+    .introduction__image {
+      width: 56rem; }
+    .introduction__logos {
+      left: 50%;
+      transform: translateX(-45%);
+      bottom: 3.1rem; } }
 /* .introduction { */
 /*     @extend %flexbox-style; */
 /**/
