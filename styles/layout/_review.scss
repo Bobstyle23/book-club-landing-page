@@ -1,61 +1,38 @@
-/* .review { */
-/*     @extend %flexbox-style; */
-/**/
-/*     max-width: 97rem; */
-/*     margin: 0 auto 12rem; */
-/*     flex-direction: column; */
-/*     gap: $spacing-32; */
-/**/
-/*     &__description { */
-/*         @extend %text-preset-3; */
-/**/
-/*         color: $color-neutral-900; */
-/*         text-align: center; */
-/*     } */
-/**/
-/*     &__author { */
-/*         @extend %text-preset-5; */
-/**/
-/*         color: $color-neutral-700; */
-/*     } */
-/* } */
-/**/
-/* @include respond-to($breakpoint-small-mobiles) { */
-/*     .review { */
-/*         margin: $spacing-64 auto; */
-/*         padding: 0 $spacing-16; */
-/*         align-items: baseline; */
-/**/
-/*         &__description { */
-/*             text-align: left; */
-/*             font-size: 2.4rem; */
-/*         } */
-/*     } */
-/* } */
-/**/
-/**/
-/* @include respond-to($breakpoint-large-mobiles) { */
-/*     .review { */
-/*         padding: 0 $spacing-32; */
-/*         align-items: baseline; */
-/**/
-/*         &__description { */
-/*             text-align: left; */
-/*             font-size: 3.2rem; */
-/*             line-height: 1.1; */
-/*         } */
-/*     } */
-/* } */
-/**/
-/**/
-/* //* HACK tablets (768px ~ 1024px) */
-/* @include respond-to($breakpoint-tablets) { */
-/*     .review { */
-/*         padding: 0 $spacing-32; */
-/*         align-items: baseline; */
-/**/
-/*         &__description { */
-/*             text-align: left; */
-/*         } */
-/*     } */
-/* } */
+.review {
+  @extend %flexbox-style;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: $spacing-32;
+  padding: 0 $spacing-16;
+  margin-bottom: $spacing-64;
+
+  &__description {
+    @extend %text-preset-3-mobile;
+  }
+
+  &__author {
+    @extend %text-preset-5;
+    color: $color-neutral-700;
+  }
+}
+
+@include respond-to($breakpoint-tablets) {
+  .review {
+    padding: 0 $spacing-32;
+
+    &__description {
+      font-size: 3.4rem;
+      line-height: 1.3;
+    }
+  }
+}
+
+@include respond-to($breakpoint-desktops) {
+  .review {
+    max-width: 97rem;
+    margin: 0 auto 12rem;
+    padding: 0;
+    text-align: center;
+    align-items: center;
+  }
+}

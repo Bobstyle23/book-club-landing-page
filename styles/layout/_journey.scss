@@ -5,6 +5,10 @@
     row-gap: $spacing-24;
   }
 
+  & {
+    row-gap: $spacing-32;
+  }
+
   &__step--number,
   span {
     @extend %flexbox-style;
