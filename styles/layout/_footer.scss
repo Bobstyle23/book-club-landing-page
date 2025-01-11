@@ -1,3 +1,110 @@
+.footer {
+  background-color: $color-neutral-900;
+  background-image: url("../../assets/images/pattern-dark-bg.svg");
+  color: $color-neutral-100;
+  text-align: center;
+  border-top-left-radius: $border-radius-12;
+  border-top-right-radius: $border-radius-12;
+  max-width: 144rem;
+
+  &__header,
+  &__review,
+  &__copyright {
+    @extend %flexbox-style;
+  }
+
+  &__content {
+    padding: $spacing-48 $spacing-16 0;
+    margin-bottom: $spacing-64;
+  }
+
+  &__header {
+    flex-direction: column;
+    gap: $spacing-40;
+  }
+
+  &__title {
+    @extend %text-preset-2-mobile;
+  }
+
+  &__btn {
+    @extend %text-preset-6-mobile;
+    margin-bottom: $spacing-24;
+    gap: $spacing-16;
+  }
+
+  &__review {
+    flex-direction: row;
+    gap: $spacing-12;
+    text-align: left;
+
+    &-avatar {
+      max-width: 11rem;
+      height: auto;
+    }
+
+    img {
+      margin-bottom: $spacing-4;
+    }
+
+    p {
+      @extend %text-preset-7;
+    }
+  }
+
+  &__copyright {
+    border-top: 1px solid $color-neutral-700;
+    flex-direction: column;
+    gap: $spacing-16;
+    padding: $spacing-24 $spacing-32;
+
+    &-author {
+      @extend %text-preset-7;
+    }
+
+    &-links {
+      @extend %flexbox-style;
+      gap: $spacing-24;
+    }
+  }
+
+  /* hr { */
+  /*   width: 100%; */
+  /*   border: 1px solid $color-neutral-700; */
+  /* } */
+}
+
+@include respond-to($breakpoint-tablets) {
+  .footer {
+    &__content {
+      padding: $spacing-64 $spacing-32 0;
+    }
+    &__title {
+      font-size: 5rem;
+    }
+
+    &__copyright {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}
+
+@include respond-to($breakpoint-desktops) {
+  .footer {
+    padding: $spacing-80 13.5rem 0;
+    &__content {
+      max-width: 75rem;
+      margin: 0 auto $spacing-64;
+      padding: 0;
+    }
+
+    &__copyright {
+      padding: $spacing-24 0;
+    }
+  }
+}
+
 /* .footer { */
 /*   max-width: 144rem; */
 /*   margin: 0 auto; */
