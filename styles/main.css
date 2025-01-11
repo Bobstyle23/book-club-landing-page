@@ -299,12 +299,14 @@ body {
   position: relative;
   z-index: 10;
   overflow: hidden; }
+  .journey, .journey__steps {
+    row-gap: 2.4rem; }
+  .journey {
+    row-gap: 3.2rem; }
   .journey__step--number,
   .journey span {
     flex-direction: column;
     gap: 2.4rem; }
-  .journey, .journey__steps {
-    row-gap: 2.4rem; }
   .journey__step--number {
     flex-direction: row;
     margin-bottom: 2.4rem; }
